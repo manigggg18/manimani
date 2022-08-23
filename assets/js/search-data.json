@@ -51,6 +51,22 @@
   
 
   
+      ,"page3": {
+          "title": "Notes & Vocab",
+          "content": "This page will be used for taking notes throughout the APCSP course .",
+          "url": "https://manigggg18.github.io/manimani/notes%20&%20vocab/",
+          "relUrl": "/notes & vocab/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -59,18 +75,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://manigggg18.github.io/manimani/robots.txt",
