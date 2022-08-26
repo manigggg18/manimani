@@ -14,3 +14,7 @@ permalink: /notes & vocab/
 [Tools and Equipment Check](https://manigggg18.github.io/manimani/2022/08/22/two.html)
 
 [Sample Word Document](https://manigggg18.github.io/manimani/2022/08/24/An-IED-Assignment.html)
+
+[Python Intro](https://manigggg18.github.io/manimani/2022/08/25/pythonlearnings.html)
+
+[Inspirational Post](https://manigggg18.github.io/manimani/2022/08/25/inspirationalquote.html)
