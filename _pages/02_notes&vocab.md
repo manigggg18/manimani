@@ -17,8 +17,8 @@ permalink: /notes & vocab/
 
 [Python Intro](https://manigggg18.github.io/manimani/2022/08/25/pythonlearnings.html)
 
-[Inspirational Post](https://manigggg18.github.io/manimani/2022/08/25/inspirationalquote.html)
+[Inspirational Post](https://manigggg18.github.io/manimani/markdown/2022/08/25/inspirationalquote.html)
 
-[Calculator](https://manigggg18.github.io/manimani/2022/08/26/calc.html)
+[Calculator](https://manigggg18.github.io/manimani/jupyter/2022/08/26/calc.html)
 
 [Physics Notes #1](https://manigggg18.github.io/manimani/markdown/2022/08/28/physicsnotes.html)
