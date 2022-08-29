@@ -19,6 +19,6 @@ permalink: /notes & vocab/
 
 [Inspirational Post](https://manigggg18.github.io/manimani/2022/08/25/inspirationalquote.html)
 
-[Calculator]()
+[Calculator](https://manigggg18.github.io/manimani/2022/08/26/calc.html)
 
-[Physics Notes #1]()
+[Physics Notes #1](https://manigggg18.github.io/manimani/markdown/2022/08/28/physicsnotes.html)
