@@ -144,6 +144,7 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#Basic-L/D">Basic L/D </a></li>
 <li class="toc-entry toc-h2"><a href="#Complex-L/D">Complex L/D </a></li>
+<li class="toc-entry toc-h2"><a href="#For-Loop-with-an-Index">For Loop with an Index </a></li>
 <li class="toc-entry toc-h2"><a href="#InfoDb-based-Quiz">InfoDb based Quiz </a></li>
 </ul><!--
 #################################################
@@ -291,6 +292,83 @@ person {'name': 'Mani T', 'age': 17, 'score': 100.0, 'langs': ['Python', 'Bash',
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[{'FirstName': 'Mani', 'LastName': 'Taleban', 'DOB': 'May 8', 'Residence': 'Somewhere', 'SE': 'moeint56403@stu.powayusd.com', 'PE': 'tmanimasih@gmail.com', 'School': 'Del Norte High School', 'FM': 'Whiplash', 'FB': 'Radiohead'}]
 For loop output
+
+Mani Taleban
+	 Residence: Somewhere
+	 Birth Day: May 8
+	 School Email: moeint56403@stu.powayusd.com
+	 Personal Email: tmanimasih@gmail.com
+	 School: Del Norte High School
+	 Favorite Movie: Whiplash
+	 Favorite Band: Radiohead
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="For-Loop-with-an-Index">
+<a class="anchor" href="#For-Loop-with-an-Index" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Loop with an Index<a class="anchor-link" href="#For-Loop-with-an-Index"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Mani"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Taleban"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"May 8"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Somewhere"</span><span class="p">,</span>
+    <span class="s2">"SE"</span><span class="p">:</span> <span class="s2">"moeint56403@stu.powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"PE"</span><span class="p">:</span> <span class="s2">"tmanimasih@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"School"</span><span class="p">:</span> <span class="s2">"Del Norte High School"</span><span class="p">,</span>
+    <span class="s2">"FM"</span><span class="p">:</span> <span class="s2">"Whiplash"</span><span class="p">,</span>
+    <span class="s2">"FB"</span><span class="p">:</span> <span class="s2">"Radiohead"</span>
+    
+<span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+    
+<span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"While loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'FirstName': 'Mani', 'LastName': 'Taleban', 'DOB': 'May 8', 'Residence': 'Somewhere', 'SE': 'moeint56403@stu.powayusd.com', 'PE': 'tmanimasih@gmail.com', 'School': 'Del Norte High School', 'FM': 'Whiplash', 'FB': 'Radiohead'}]
+While loop output
 
 Mani Taleban
 	 Residence: Somewhere
