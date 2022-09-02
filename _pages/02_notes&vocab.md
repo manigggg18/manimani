@@ -5,6 +5,8 @@ permalink: /notes & vocab/
 ---
 > *This page will be used for taking notes throughout the APCSP course*
 
+---
+
 <table>
     <tr>
      <th>Week</th>
@@ -77,3 +79,8 @@ permalink: /notes & vocab/
 [Calculator](https://manigggg18.github.io/manimani/jupyter/2022/08/26/calc.html)
 
 [Physics Notes #1](https://manigggg18.github.io/manimani/markdown/2022/08/28/physicsnotes.html)
+
+## Week 2
+[Lists, Dictionaries, and Iterations](https://manigggg18.github.io/manimani/collegeboard/python_lists)
+
+[Changing the Theme (Effects)](https://manigggg18.github.io/manimani/markdown/2022/09/01/theme.html)
