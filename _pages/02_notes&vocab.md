@@ -5,6 +5,61 @@ permalink: /notes & vocab/
 ---
 > *This page will be used for taking notes throughout the APCSP course*
 
+<table>
+    <tr>
+     <th>Week</th>
+     <th>Markdown</th>
+     <th>Jupyter</th>
+     <th>Word</th>
+    </tr>
+
+    <tr>
+        <td>
+            2 
+        </td>
+        <td>
+            Changing the Theme (effects)
+        </td>
+        <td>
+            Lists, Dictionaries, and Iterations
+        </td>
+        <td>
+            n/a
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            1 
+        </td>
+        <td>
+            Physics Notes, Inspirational Post
+        </td>
+        <td>
+            Python Intro, Calculator, Tools and Equipment Check
+        </td>
+        <td>
+            Sample Word Doc
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            0 
+        </td>
+        <td>
+            Sample MD Post
+        </td>
+        <td>
+            Sample Jypyter Notebook
+        </td>
+        <td>
+            n/a
+        </td>
+    </tr>
+    
+</table>
+
 ## Week 0
 [Sample Jupyter Notebook](https://manigggg18.github.io/manimani/jupyter/2022/08/21/firstnotebook.html)
 
