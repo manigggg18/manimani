@@ -13,6 +13,7 @@ permalink: /notes & vocab/
      <th>Markdown</th>
      <th>Jupyter</th>
      <th>Word</th>
+     <th>Other</th>
     </tr>
 
     <tr>
@@ -27,6 +28,9 @@ permalink: /notes & vocab/
         </td>
         <td>
             n/a
+        </td>
+        <td>
+            Table, Dark Theme
         </td>
     </tr>
 
@@ -43,6 +47,9 @@ permalink: /notes & vocab/
         <td>
             Sample Word Doc
         </td>
+        <td>
+            Page Logo, Notes & Vocab, Images
+        </td>
     </tr>
     
     <tr>
@@ -57,6 +64,9 @@ permalink: /notes & vocab/
         </td>
         <td>
             n/a
+        </td>
+        <td>
+            Images, Links, index.html, _config.yml
         </td>
     </tr>
     
