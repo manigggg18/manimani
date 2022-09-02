@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inspirational Quote
-image: kjckc.png
+image: /images/kjckc.png
 categories: [markdown]
 ---
 
