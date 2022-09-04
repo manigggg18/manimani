@@ -5,6 +5,4 @@ image: /images/kjckc.png
 categories: [markdown]
 ---
 
-
-![]({{site.baseurl}}/images/you-got-this-meme-idlememe-1-300x310.jpg)
-
+<img src="/images/kjckc.png" alt="perhaps" style="width:300px;height:310px;">
