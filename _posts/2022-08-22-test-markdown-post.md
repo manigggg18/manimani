@@ -1,5 +1,6 @@
 ---
 toc: true
+comments: true
 layout: post
 description: Testing Markdown and maybe other stuff.
 categories: [markdown]

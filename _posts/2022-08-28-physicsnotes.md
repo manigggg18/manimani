@@ -1,5 +1,6 @@
 ---
 toc: true
+comments: true
 layout: post
 description: A portion of physics lessons from Mr. liao's class.
 categories: [markdown]
