@@ -141,7 +141,6 @@
   
 
   
-  
 
   
   
@@ -156,7 +155,10 @@
   
 
   
-      ,"page10": {
+  
+
+  
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://manigggg18.github.io/manimani/robots.txt",
