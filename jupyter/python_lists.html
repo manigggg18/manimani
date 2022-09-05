@@ -189,7 +189,7 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>       <span class="c1"># keys and values</span>
     <span class="s2">"age"</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
     <span class="s2">"score"</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
     <span class="s2">"langs"</span><span class="p">:</span> <span class="n">langs</span>
@@ -245,7 +245,7 @@ person {'name': 'Mani T', 'age': 17, 'score': 100.0, 'langs': ['Python', 'Bash',
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>         <span class="c1">#introduces the data</span>
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Mani"</span><span class="p">,</span>
     <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Taleban"</span><span class="p">,</span>
     <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"May 8"</span><span class="p">,</span>
@@ -261,8 +261,8 @@ person {'name': 'Mani T', 'age': 17, 'score': 100.0, 'langs': ['Python', 'Bash',
 <span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>            <span class="c1"># comma = space</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span>       <span class="c1"># \t = tab indent</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"School Email:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"SE"</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Personal Email:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"PE"</span><span class="p">])</span>
@@ -272,7 +272,7 @@ person {'name': 'Mani T', 'age': 17, 'score': 100.0, 'langs': ['Python', 'Bash',
     <span class="nb">print</span><span class="p">()</span>
 
 
-<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>         <span class="c1"># for loop</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"For loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">InfoDb</span><span class="p">:</span>
         <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
@@ -407,12 +407,12 @@ Mani Taleban
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span> <span class="o">,</span><span class="nn">sys</span>
 
-<span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>        
+<span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>        <span class="c1"># question and answer function </span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
     
-    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">msg</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">msg</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>           <span class="c1"># this conditional determines the answers</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">":)"</span><span class="p">)</span>
         <span class="k">global</span> <span class="n">correct</span>
         <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -428,7 +428,7 @@ Mani Taleban
 <span class="n">Q4</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Who plays Fletcher in Whiplash?"</span><span class="p">,</span> <span class="s2">"jk simmons"</span><span class="p">)</span>
 <span class="n">Q5</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"How's it going?"</span><span class="p">,</span> <span class="s2">"eh"</span><span class="p">)</span>
 
-<span class="n">Questions</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">Questions</span> <span class="o">=</span> <span class="p">{</span>           <span class="c1"># infoDb</span>
     <span class="s2">"Q1"</span><span class="p">:</span> <span class="n">Q1</span><span class="p">,</span>
     <span class="s2">"Q2"</span><span class="p">:</span> <span class="n">Q2</span><span class="p">,</span>
     <span class="s2">"Q3"</span><span class="p">:</span> <span class="n">Q3</span><span class="p">,</span>
@@ -479,7 +479,15 @@ manimani you scored 5/5
 
 
 
-  </div><a class="u-url" href="/manimani/jupyter/python_lists" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="manigggg18/manimani"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/manimani/jupyter/python_lists" hidden></a>
 </article>
 
       </div>
