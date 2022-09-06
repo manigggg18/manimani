@@ -91,6 +91,6 @@ permalink: /notes & vocab/
 [Physics Notes #1](https://manigggg18.github.io/manimani/markdown/2022/08/28/physicsnotes.html)
 
 ## Week 2
-[Lists, Dictionaries, and Iterations](https://manigggg18.github.io/manimani/collegeboard/python_lists)
+[Lists, Dictionaries, and Iterations](https://manigggg18.github.io/manimani/jupyter/python_lists)
 
 [Changing the Theme (Effects)](https://manigggg18.github.io/manimani/markdown/2022/09/01/theme.html)
