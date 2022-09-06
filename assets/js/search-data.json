@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Changing the Theme (Effects)",
-            "content": "I tried to change the theme and as a result the CI status changed from “passing” to “failing”. My page also didn’t look any different. . . . . So I changed it back to the default theme. .",
+            "content": "First Attempt . I tried to change the theme and as a result the CI status changed from “passing” to “failing”. My page also didn’t look any different. . . Second Attempt . . It worked but some posts looked very off-putting. . . So I changed it back to the default theme. .",
             "url": "https://manigggg18.github.io/manimani/markdown/2022/09/01/theme.html",
             "relUrl": "/markdown/2022/09/01/theme.html",
             "date": " • Sep 1, 2022"
