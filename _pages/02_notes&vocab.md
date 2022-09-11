@@ -115,6 +115,6 @@ permalink: /notes & vocab/
 [Changing the Theme (Effects)](https://manigggg18.github.io/manimani/markdown/2022/09/01/theme.html)
 
 ## Week 3
-[Code.org App Development Blog](https://manigggg18.github.io/manimani/jupyter/2022/09/09/codequizblog.html)
+[Code.org App Development Blog](https://manigggg18.github.io/manimani/jupyter/2022/09/09/codequizblog)
 
 [Code.org App](https://studio.code.org/projects/applab/dK3rsj1wyrLTotdtTSvEog1SQxyveOZOI9EupNZpdQE)
