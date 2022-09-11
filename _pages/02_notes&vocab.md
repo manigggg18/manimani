@@ -16,6 +16,25 @@ permalink: /notes & vocab/
      <th>Other</th>
     </tr>
 
+
+<tr>
+        <td>
+            3 
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Code.org App Development Blog
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Code.org App
+        </td>
+    </tr>
+
     <tr>
         <td>
             2 
@@ -94,3 +113,8 @@ permalink: /notes & vocab/
 [Lists, Dictionaries, and Iterations](https://manigggg18.github.io/manimani/jupyter/python_lists)
 
 [Changing the Theme (Effects)](https://manigggg18.github.io/manimani/markdown/2022/09/01/theme.html)
+
+## Week 3
+[Code.org App Development Blog]()
+
+[Code.org App](https://studio.code.org/projects/applab/dK3rsj1wyrLTotdtTSvEog1SQxyveOZOI9EupNZpdQE)
