@@ -22,10 +22,10 @@ permalink: /notes & vocab/
             3 
         </td>
         <td>
-            n/a
+            Code.org App Development Blog, CPT Initial Plan/Design
         </td>
         <td>
-            Code.org App Development Blog
+            n/a
         </td>
         <td>
             n/a
@@ -118,3 +118,5 @@ permalink: /notes & vocab/
 [Code.org App Development Blog](https://manigggg18.github.io/manimani/markdown/2022/09/11/appblog.html)
 
 [Code.org App](https://studio.code.org/projects/applab/dK3rsj1wyrLTotdtTSvEog1SQxyveOZOI9EupNZpdQE)
+
+[CPT Initial Concept/Design](https://manigggg18.github.io/manimani/markdown/2022/09/11/cpt1.html)
