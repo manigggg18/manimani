@@ -150,9 +150,14 @@ window.onload = wrap_img;
 
 <p><code class="language-plaintext highlighter-rouge">onEvent("textinput", "change", function(event) {</code></p>
 
-<p>`  setText(“id”, + getText(“textinput”));`</p>
-
-<p>`  setScreen(“id”);`</p>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">setText("id", + getText("textinput"));</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">setScreen("id");</code></p>
+  </li>
+</ul>
 
 <p><code class="language-plaintext highlighter-rouge">});</code></p>
 
@@ -160,9 +165,14 @@ window.onload = wrap_img;
 
 <p><code class="language-plaintext highlighter-rouge">onEvent("text_input1", "change", function(event) {</code></p>
 
-<p>`  setText(“response”, “Wow, only “ + getText(“text_input1”) + “?”);`</p>
-
-<p>`  setScreen(“r1”);`</p>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">setText("response", "Wow, only " + getText("text_input1") + "?");</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">setScreen("r1");</code></p>
+  </li>
+</ul>
 
 <p><code class="language-plaintext highlighter-rouge">});</code></p>
 
@@ -199,17 +209,27 @@ window.onload = wrap_img;
 
 <p><code class="language-plaintext highlighter-rouge">onEvent("id", "click", function(event) {        # in this case, id is a correct answer </code></p>
 
-<p>`  score = score + 1;`</p>
-
-<p>`  setText(“text_input”, “Score = “ + score);        # one point added`</p>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">score = score + 1;</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">setText("text_input", "Score = " + score);        # one point added</code></p>
+  </li>
+</ul>
 
 <p><code class="language-plaintext highlighter-rouge">});</code></p>
 
 <p><code class="language-plaintext highlighter-rouge">onEvent("id", "click", function(event) {       # in this case, id is an incorrect answer</code></p>
 
-<p>`  score = score - 1;`</p>
-
-<p>`  setText(“text_input”, “Score = “ + score);        # one point subtracted`</p>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">score = score - 1;</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">setText("text_input", "Score = " + score);        # one point subtracted</code></p>
+  </li>
+</ul>
 
 <p><code class="language-plaintext highlighter-rouge">});</code></p>
 
