@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Testing Local Server Functions",
-            "content": "",
+            "content": "Process . After entering the “make server” command on a terminal and letting it run, I decided to add a minor change to ‘index.html`. Some texts came up on the terminal and the change was presented immediately. The only problem was that adding a Jupyter Notebook and editing it did not have any effects. . Effects . . . .",
             "url": "https://manigggg18.github.io/manimani/markdown/2022/09/14/ls.html",
             "relUrl": "/markdown/2022/09/14/ls.html",
             "date": " • Sep 14, 2022"
