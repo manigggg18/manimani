@@ -150,7 +150,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Function-1:-Product-Return">Function 1: Product Return<a class="anchor-link" href="#Function-1:-Product-Return"> </a></h2>
+<h2 id="Single-Function:-Product-Return">Single Function: Product Return<a class="anchor-link" href="#Single-Function:-Product-Return"> </a></h2>
 </div>
 </div>
 </div>
@@ -191,7 +191,7 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Function-2:-JSON-Lists-and-Prototypes">Function 2: JSON Lists and Prototypes<a class="anchor-link" href="#Function-2:-JSON-Lists-and-Prototypes"> </a></h2>
+<h2 id="Set-of-Functions-and-Definitions:-JSON-Lists-and-Prototypes">Set of Functions and Definitions: JSON Lists and Prototypes<a class="anchor-link" href="#Set-of-Functions-and-Definitions:-JSON-Lists-and-Prototypes"> </a></h2>
 </div>
 </div>
 </div>
@@ -217,22 +217,22 @@ window.onload = wrap_img;
     <span class="k">this</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">type</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="nx">Media</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="nx">Media</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>           <span class="c1">// organize</span>
     <span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">cre</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">cre</span><span class="p">,</span> <span class="nx">date</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">date</span><span class="p">,</span> <span class="nx">type</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">type</span><span class="p">};</span>
     <span class="kr">const</span> <span class="nx">jsonString</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
     <span class="k">return</span> <span class="nx">jsonString</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">var</span> <span class="nx">album</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Media</span><span class="p">(</span><span class="s2">&quot;Kid A&quot;</span><span class="p">,</span> <span class="s2">&quot;Radiohead&quot;</span><span class="p">,</span> <span class="mf">2000</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">album</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Media</span><span class="p">(</span><span class="s2">&quot;Kid A&quot;</span><span class="p">,</span> <span class="s2">&quot;Radiohead&quot;</span><span class="p">,</span> <span class="mf">2000</span><span class="p">);</span>              <span class="c1">// song variable</span>
 <span class="nx">album</span><span class="p">.</span><span class="nx">setType</span><span class="p">(</span><span class="s2">&quot;Album&quot;</span><span class="p">);</span>
 
-<span class="kd">var</span> <span class="nx">movie</span> <span class="o">=</span> <span class="p">[</span>
+<span class="kd">var</span> <span class="nx">movie</span> <span class="o">=</span> <span class="p">[</span>               <span class="c1">// movie variables</span>
     <span class="k">new</span> <span class="nx">Media</span><span class="p">(</span><span class="s2">&quot;Whiplash&quot;</span><span class="p">,</span> <span class="s2">&quot;Damien Chazelle&quot;</span><span class="p">,</span> <span class="mf">2014</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Media</span><span class="p">(</span><span class="s2">&quot;Atonement&quot;</span><span class="p">,</span> <span class="s2">&quot;Joe Wright&quot;</span><span class="p">,</span> <span class="mf">2007</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Media</span><span class="p">(</span><span class="s2">&quot;Prestige&quot;</span><span class="p">,</span> <span class="s2">&quot;Christopher Nolan&quot;</span><span class="p">,</span> <span class="mf">2006</span><span class="p">)</span>
 <span class="p">]</span>
 
-<span class="kd">var</span> <span class="nx">show</span> <span class="o">=</span> <span class="p">[</span>
+<span class="kd">var</span> <span class="nx">show</span> <span class="o">=</span> <span class="p">[</span>            <span class="c1">// show variables</span>
     <span class="k">new</span> <span class="nx">Media</span><span class="p">(</span><span class="s2">&quot;Fargo&quot;</span><span class="p">,</span> <span class="s2">&quot;Noah Hawley&quot;</span><span class="p">,</span> <span class="mf">2014</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Media</span><span class="p">(</span><span class="s2">&quot;Daredevil&quot;</span><span class="p">,</span> <span class="s2">&quot;Kati Johnson&quot;</span><span class="p">,</span> <span class="mf">2015</span><span class="p">),</span>
 <span class="p">]</span>
