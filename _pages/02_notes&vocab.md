@@ -16,8 +16,61 @@ permalink: /notes & vocab/
      <th>Other</th>
     </tr>
 
+    <tr>
+        <td>
+            6 
+        </td>
+        <td>
+            Code.org App Development Blog, CPT Initial Plan/Design
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Code.org App
+        </td>
 
-<tr>
+    <tr>
+        <td>
+            5 
+        </td>
+        <td>
+            Code.org App Development Blog, CPT Initial Plan/Design
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Code.org App
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            4 
+        </td>
+        <td>
+            Code.org App Development Blog, CPT Initial Plan/Design
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Code.org App
+        </td>
+    </tr>
+
+
+    <tr>
         <td>
             3 
         </td>
