@@ -16,7 +16,7 @@ permalink: /notes & vocab/
      <th>Other</th>
     </tr>
 
-    <tr>
+<tr>
         <td>
             6 
         </td>
@@ -32,8 +32,9 @@ permalink: /notes & vocab/
         <td>
             Code.org App
         </td>
+    </tr>
 
-    <tr>
+<tr>
         <td>
             5 
         </td>
@@ -51,7 +52,7 @@ permalink: /notes & vocab/
         </td>
     </tr>
 
-    <tr>
+<tr>
         <td>
             4 
         </td>
@@ -70,7 +71,7 @@ permalink: /notes & vocab/
     </tr>
 
 
-    <tr>
+<tr>
         <td>
             3 
         </td>
@@ -88,7 +89,7 @@ permalink: /notes & vocab/
         </td>
     </tr>
 
-    <tr>
+<tr>
         <td>
             2 
         </td>
@@ -106,7 +107,7 @@ permalink: /notes & vocab/
         </td>
     </tr>
 
-    <tr>
+<tr>
         <td>
             1 
         </td>
@@ -124,7 +125,7 @@ permalink: /notes & vocab/
         </td>
     </tr>
     
-    <tr>
+<tr>
         <td>
             0 
         </td>
