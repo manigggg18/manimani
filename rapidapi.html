@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      17 min read
     
 </span></p>
 
@@ -151,16 +151,90 @@ window.onload = wrap_img;
         <td><img src="/manimani//images/5553CDD7-3786-4D0F-91B8-4AEACD678A49.JPEG" height="60" title="Submenu" alt=""></td>
         <td><a href="/manimani/jupyter/java_ipynb">JavaScript</a></td>
         <td><a href="/manimani//jupyter/java_table">Table</a></td>
+        <td><a href="/manimani//rapidapi">API</a></td>
     </tr>
 </table>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://maptiles.p.rapidapi.com/es/map/v1/3/4/2.png"</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"24662782b6msh7d95c7667aea623p12c71ajsnc0aa91d82aa9"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"maptiles.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
 
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>�PNG
+
+IHDR        k�XT   PLTE|;|A��A�I��U��]��]��]��b��h��t�}���x�h���z�������_���|�[�ǌ�����j��b��z�����e��k��k�������Ġ��d��f�ʘ�����l�ĉ��r��|��v��n��m��q��s�ą�����{�����y�ϫ�����n�ќ�����r��y���Ǔ�����z�ă��q��t��r��v��z�ŋ��r�Ԃ��y�ˆ�����r�ԃ��������������u�Ҩ�����������������������u�Ռ��������x�Ԥ�����������������������x�օ�ċ���������������������������������¢����¥�¢��ê�ģ�������������Ħ�¥�Ģ����é�³�Ū�©�ť�®Û������٥­�Ʃ�Ƥ��Ģƭ����ȧ�������ƭ�ĳ�ȭ�ƫ�ɥ�Ť����ɰ�ɬ�Ų�ß�Ļ�ū�˥�Ĥ��ڛ�ɹ���ʱ�˫�ɿ�Ż�Ĳǯ��Ŭ�ͥ��íɻ�˲�Ļ�ͫ��ʻĴ�Ш�ʨ�˺�ĺ�ѧ�ʹ�Ĵ����ө�ͺ�Ѷ�̴ȷ��Ļ�ԧ������Ҵ����ͻ�Ǽ�̵�˭�֫�һ�ج����̼�ճ�˸��ټ������ٳ�ؽ�Ӽ�ճ�ڮ�۲�ټ�ӽ�ձ��Ⱥ����ƴ������ݱ�ָ�۽�޳�ܼ����������������������������������������������������������������������:�L  � IDATx���l��/��8�
+Q�D�ʵޫۼs�w������$��9��9��9���Q��'����������as	.��au�����g��7���^q��]p�һ+�h��_ݼ&gt;77������_n\_]{s�����b}~f���n'O�����B�P��~�R.��Zy2��%���K�7[��=~�~�&lt;�V�Z��i�y�W��&gt;��ju�G*���s~i~ie}}i�%�֗�&amp;С�\�W��qX�ۋWV�۞�o~����
+�B5h�d##a5���r���ިU�\_����=S�֪c�j�6�N�r�jvZ�]��-�� �Je�N�3�W��{��h��xuei``���� mV+ݒ8_�wA���-��;���|���/\Xڀ��͛x����4�=�Rg���� LM�N&amp;���d�£Z��*
+�f��+u  � ��g't�w�̮�~1?�ޠ`6�7c X1��  )�C��uнf&gt;�Yp{���a6����\��hll�ue��7�&gt;.�]�ͣ���&amp;��j!p��?O�����t�ƿP��sur�j��V��զ�+T*'��q� �����`�
+�S(��8�%[N�%�)x�4����
+|�X�M�L�	8���/'''��Z5$��\uF8 ���$�E}m��3!l}�![���Vͺ�f_�YWӌ�]��?�%NN炾����84A����]�80�� X��Ug����wi@{t�oB�p	z���ɵ�n�]^�k��W�ڸ�����:��z��듓���~9���+�[t%
+ ���;m�����lF��P����Z�C�pP;��&lt;������&amp;f6L��@��0*��ā���'�n1�� ׎��$��N]^�A�|��扵/������Zn@� ��SSSU�{�|®���d2֏�A(�, �
+%�'~  u�_��w��B�M����曝gb��r���&lt;��bQ� �O����������K��63?~���I�.� �ږ=�;������G����^}j�ʉ՛�_l��/C�k&gt;&gt;�@P+ÈW�FUU�%Y
+�r�R�F��@�kz�#g�_t8wk���@Ѿ`�V0N�+Q�����Nxj�s�x�� 6�NL�׋�ԫ�z� ` �y�p���ܡ�ݯg����}�[�~ R���{�WW���z����2d������4��	?��2��jA�U9`O�j�$v+��(�d;ͽ�-\ӔFC�;P�+�("�&gt;��=�z��щ��T��h���DѼ	�`:&amp;G���^�H���R���  �~��bA�_��%��?e
+����@�����tX�� �І�cX���OaL�N���I�h���F�q�=ňm�ɦ:*������t[��9�w���l}a����"!��o�01��?�\�b��T0S"��B�������5��R!d�\��e����1����) �������ˍ���I��k���&gt;�d6�Ʋ@�b�it�����&gt;��Ӎ�������������O��q�aea�HG�R%*
+G @!,���F��43339}y�x�D7�50a2����G�&gt;�B�.���BmT�诊����k�W��4����	�O&gt;]_��vD` ��!)��Pt~Fz&gt;�&lt;P-���&lt;�e`nb� �B$�͂N�;J(@�'b��XO/Q��r��S��zcsn��j���d� ���z��HT���  ���|,�T�b�O�w����0@��u&amp;�k�W�:�El��*��f�G������zqB�j�
+a8.P�Vj�Jei�V�X50[5���9?�=�;�"|�1���H�p��z*��+W��63������S��&amp;dz�~9��~��3�֝1s� @&gt;P-�6,��UFH���Q_8|���&lt;�U³t(�\�⮪�J쮃7���P_�Wg�ؗ ps��}�-{��w��q ��/�Z�[][�8����� ��L���t�}�2n�|������t��Q�Q�o��O�)�6��F��= �Cr�O�A
+�j�ڌ��$�,&lt;_.dՓ�e�'�� ����r�Z�u��&lt; P�Vk�^y������ǎ	�v��"4kMh8H��{��#�@��q������[A���''i4��� �Iڲ����j،���It(�t���w�g�l0]u�ln�T./�V��Hy|�"�!��.=0Y8�����4��Z.g�*(�:�g�XS�C�{r"t	GN�_9��#����*c���˧��׈����J��Ю��~L��wn-Y���4��|4�/3�рۗ{�VN�-&gt; 7���I@툄 �؊��g� �rQ�&amp;T��= .P-W�J�RU���^�6��Wj���#:$Pwc��ڡ���B���"%8�G��K���?�z�q߫��A�P�VP�b�K&amp;Ky��fc*@���з�}�OXm�&lt;��"e������`!r�\�,���	l�P)q?���8L@�&gt;�L
+kO�R�T�j67jo��,�AP�Ȫ�-$B+)F{�b�~ �1�b��ɻ�������K��6nL��8꘵�{�m�2@)jW@Ȫ�c�����W�4\_TA0o� �B�T�~�ZH�PD-�!��
+�i�Z�������Q�ٓ�*��z���U �tU����uYLZ��� �:��qO�����bc�: ��Fc	{a�W�y���8v2V�-��P���~v��[���Q�;5�%���0���0��h4�r!�d�̕_�yMd��*�$�f�BL�W��Հh��]��xQ�.U�}YU镕4DQmA� ��%�z#Pi-R�K+���;�J���$�^[������\�֑�Ǯέ~��|��w��y����O��n��ھ{��꭭�����l}�w���4�b[���@)�|���j�W1e���!8 �\��K�
+ ��n�&amp;|y��v&amp;=n�/�Gl(ƃr��fO�g���W���:TQ: .��C���؀�Ą5X�*�YP��%p��گ�gցn�������6����ݻw�o�r��+�l����q�����{���ۯ��}e+3];�
+�
+��h����֖����� ���z�L��Ĩ�[�}r��&gt;��h/C�˪-�b������M@��f�5[��zф?�5fUS��9��"J�X������a۬Y��m���\{{{_}�~y	U�ƭ���n��lm&gt;б��}��;������g��ꕇ�&gt;���w��?��h��l&gt;j0
+[�������~�'�b���&gt;��]V�X??&gt;�R	�W˗�0�7'66.����G[o�ş&gt;ٵ��w���xdk�-`G +{�l5%�% ��I����� ��Q�;�`� ���`0���������r)��xye{���	 � v=����`�om}������;غ���{�g�s_����*�9H�,u�S���Yb�z0��XqY���,J�����8�Z��0_����{�y;!@��g�٬��e����tB���t�&gt;�G�U����w��Bg_%Bɿt���~��Ճ�����B v W&gt;�d ����w�6 EU�x���K�q�B5?g�sY)�-3a���ˏ�bY�؈9@�-�e �X�L�v��(���8�R���	���cP�,d�W�dAy�
+����~u��[gؚU'ߒ[\��|�r��P���)�j�Tʿ��P`�D�&amp;������&gt;�f��D)���M�:�
+ u��r-'Z�
+錀�"	`%R��ҪP��$Z�Q�Q1M�q"�ڦ��l��z^��w&lt;��������z��??8~u�����W���?X.���q_������l���� dT�ZMWe/��f�	G�(�,���r)hs���"g2������y̓U�_ܬ�'.���Z�tYgo�F�v%�(����Jm����g����R�����ڀ� �� �Nά���O-������	��Z�82��_�k��J��TM������#1�ϳ�&lt;�.'��Z̳tX.Ģ��)��Ѡ�TDf hb��ZGY����
+T�%�\�ƚ湉q�U�� ����׮AFϋ�s�*��l�ڭ H `!�/�M��cכ�8�C�~��j&gt;&gt;`eq��h.�a�`�l�K�n[�����x�&amp;N�`3l&gt;,L�+n'��_%Hf�*˫p�f����E�`x�R_Kz�B�e�|Ug�2R@�]"�(�H-Q
+(Z�v-wᠱ������P�7����j�S�e�3�ݟ�X�Jr6������D�n��[3���yTA%�C ��\` �����]�j�3�PR����"w{�)�E��U,���/�RU+@�!
+"�@����X��GWBRh��I ���ת`T.Wˌ��̃�&gt;�ϹM��An����-���K�gq&amp;��~�`ʘ$T޸�_������:9�шA�`�tgq�K	�p���9�r�'Iѕ�V�N�?k��A�(���"�ڎx�`�/*����ñ��{ PIi� @����F�1֘��GX�@����z���i�VWO��d���]�E�Ѝ��b�6��5:��*���Q�ay�!��vS���� _�y� %�/�.�5"�q�f��`@ E[�-_�EA��nTC�jL!����⫂�����_&gt;a��eH�t夂�@�-�� ��o#0�8w�$?�@9�� �_��`%�o�U�~�aOH�=����3k�@���f%����մ�(W�IP��N�᫯��r"ʌG|bel;V.�fcNo&gt;##�� ��Rd�%VL)�#Ba ��VJ���ٯQ��"�c��0���#����|�S��b�瓗P��X]Zy3���+~�����`3Nɰ�����L����j�ŀ bDh$ܥ��X2Y.��#dcH�Q��-�Ov�Hʧݹ*K��B6�L���4X���eYp�t֋�0ȩ������P-�n�������b 0u��:f�ڸ�ۀ)X_82|s||~i�q�q���ҥ��`�6U+�-e,0��W��dU��N���
+�ʍ����t�lg`���+8!9Bx���]�gO&gt;�E�q�]��4Qrr��(��x�ƬǦK�[�s(e���q�������&gt;Ky�.P��t۷8�����/~�T�Sñ�#=.a���2}�/ e��:N�h4�V� ��,$	 ���� 
+���$��C!��X��a6&gt;j���W"
+Qh�[L��`��O�ߗ�����O&gt;�?��j��6�E*����P�P� &lt;/�Vyj���&lt;�%��fYQ�H���7Ы �~q�Ieт���خ.��j�@��pq"xd	�&amp;$������|.���v��~IQ��&lt;�L�B��,��jh�n�h�;3wv���G
+���� �S�*}�Ѭ�O��D�n ̐��zcs�j**`�\����J�*[�����Bde�J��A)��
+���g@�b��8`�cZ��M
+�{�����3���������P�|Ph,�WV�9����k��$��2p�b�{��v�tV��N���z �hw�( R�b� N.��� ��&amp;戨��m�R��`9
+�2zL6�g����r֝ ~���lQQ!�7E�c8�
+�)��c��	e�"T���2����)��-��V5�G���&gt;��r}��͝ ���g����f�)�6xK��.�I�JD@(-Kf�re�@T�`��W�A���00$�X	;��X6��*�o�@�79�)i��С��v��#/\^^ml�/n�_^l,c���n|�����k�h�Z�Yུ��
+H�&lt;��NZ�A�'��i+�{[���"恭��&gt;��L�N1�6I����O߽�uu��G� �b  �;�D�86eLq������F8��?M�KcyxW�Z�D���� ��(��m��'�;�Q@�)����ȹ�9ș��]_j̭,-��^��ܸr�V��-�����)X�a`&gt;а��X�o�x�=�ߪ�) U���������G�n}��g�f�9���o&gt;�1�����i��z���m=�u��o��FД����]X��J�
+��d��d���F!"��g�X¯���*`s^��:�����%�����#4 %��aw�&gt;?=s�H�}����s���^��E��&lt;3S����vMt����d�z �C��-��,��ڤ*oJ���Ml����\�����������۟~���?�q�7  ۟�K|p�s��� �_�B�O�Q=�K�~�Ӟ�%���*�6��.�������1H��\���XBV���t�g��V�_��%E+�+??U95�`��^���B���a}uP�^��t�g��XooE��g��-�"�1�L���G�]���#���=rf���|���|���l��������k{��~hk�b����WI3�)YL����|�]�Z��B��Hp��TM�ː]��q�@ �h:
+&gt;����R�ٿÉԩ`}������K��s�
+�B���GϿ�TP	7&gt;����P��E��@%U�x���#��啋"K���������CW @�����Cwn�������.��}����n�Ҙ5�Z���=ൃ�H2�;  �^F�N' ޳ ��F��wJ�$�t��U��[b@����F-�C==���K��s��͝���ym9|ci�w�l������
+����&lt;2Q6a�����N�L--&amp;^�! kk�=࡭��# ���~������ӷo?�y�;��|��6w��~�����u��uA��e5�[��OVLo��J,F�XA�`�J ܿ\�"</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
   </div><a class="u-url" href="/manimani/rapidapi" hidden></a>
 </article>
 
