@@ -174,7 +174,7 @@ permalink: /notes & vocab/
             n/a
         </td>
         <td>
-            Personal Flask Server, Setting up Fastpages local server, Docker Setup
+            Personal Flask Server, Setting up Fastpages local server, Docker Setup, Flask Video
         </td>
     </tr>
 
@@ -284,61 +284,63 @@ permalink: /notes & vocab/
 [CPT Initial Concept/Design](https://manigggg18.github.io/manimani/markdown/2022/09/11/cpt1.html)
 
 ## Week 4
-Testing Local Server Functions
+[Testing Local Server Functions](https://manigggg18.github.io/manimani/markdown/2022/09/14/ls.html)
 
-Program Purpose - Mani's Idea
+[Program Purpose - Mani's Idea](https://manigggg18.github.io/manimani/markdown/2022/09/22/prpurpose.html)
 
-Personal Flask Server
+[Personal Flask Server](https://github.com/manigggg18/maniflpt)
 
-Setting up Fastpages local server
+[Setting up Fastpages local server (NOTE: only works locally)](http://localhost:4000/manimani/)
 
-Docker Setup
+[Docker Setup](https://github.com/fastai/fastpages/blob/master/_fastpages_docs/DEVELOPMENT.md)
+
+[Flask Video](https://www.youtube.com/watch?v=-EPuP4X8pmo)
 
 ## Week 5
-AP 1.1-1.3 Quiz Blog
+[AP 1.1-1.3 Quiz Blog](https://manigggg18.github.io/manimani/markdown/2022/09/28/apblog.html)
 
-Java Table
+[Java Table](https://manigggg18.github.io/manimani/jupyter/java_table)
 
-Java (IPYNB)
+[Java (IPYNB)](https://manigggg18.github.io/manimani/jupyter/java_ipynb)
 
-Submenu
+[Submenu](https://manigggg18.github.io/manimani/javascript/)
 
-Group Planning for Final Project
+[Group Planning for Final Project](https://kaiden-dough.github.io/fastpages/markdown/week7/2022/10/09/groupplan.html)
 
 ## Week 6
-AWS Development
+[AWS Development](https://manigggg18.github.io/manimani/markdown/2022/10/04/aws.html)
 
-AWS Server Setup (Docker included)
+[AWS Server Setup (Docker included)](https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Instances:)
 
 ## Week 7
-AP 1.4 Quiz Blog
+[AP 1.4 Quiz Blog](https://manigggg18.github.io/manimani/markdown/2022/10/08/apblog2.html)
 
-Python RapidAPI
+[Python RapidAPI](https://manigggg18.github.io/manimani/rapidapi)
 
-Identifying Errors
+[Identifying Errors](https://manigggg18.github.io/manimani/jupyter/errors)
 
-Group Project Final Plan
+[Group Project Final Plan](https://github.com/kaiden-dough/lawnmowers-flask-repo.git)
 
 ## Week 8
-AP 4.1 Quiz Blog
+[AP 4.1 Quiz Blog](https://manigggg18.github.io/manimani/markdown/2022/10/14/apblog3.html)
 
-Group Project Plan Check-in
+[Group Project Plan Check](https://kaiden-dough.github.io/fastpages/markdown/week7/2022/10/09/groupplan.html)
 
 ## Week 9
-Python Web API Endpoints using Songs
+[Python Web API Endpoints using Songs](https://manigggg18.github.io/manimani/webapi)
 
-Javascript Web Page using an API
+[Javascript Web Page using an API](https://manigggg18.github.io/manimani/webfrontend)
 
-Fetch of Backend Songs
+[Fetch of Backend Songs](https://manigggg18.github.io/manimani/songs)
 
-Working On Final Project
+[Working On Final Project](https://github.com/kaiden-dough/lawnmowers-fastpages.git)
 
 ## Week 10
-Working on Final Project
+[Working on Final Project](https://github.com/kaiden-dough/lawnmowers-fastpages/issues/2)
 
 ## Week 11
-N@tm Blog
+[N@tm Blog](https://manigggg18.github.io/manimani/natmblog)
 
-Final Project Finished
+[Final Project Finished](https://kaiden-dough.github.io/lawnmowers-fastpages/)
 
 ## Week 12
