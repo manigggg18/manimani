@@ -12,8 +12,116 @@ permalink: /notes & vocab/
      <th>Week</th>
      <th>Markdown</th>
      <th>Jupyter</th>
-     <th>Word</th>
      <th>Other</th>
+     <th>Projects</th>
+    </tr>
+
+<tr>
+        <td>
+            12 
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            11 
+        </td>
+        <td>
+            N@tM Blog
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Final Project Finished
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            10 
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Working on Final Project
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            9 
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Python Web API Endpoints using Songs, Javascript Web Page using an API, Fetch of Backend Songs
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Working On Final Project
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            8 
+        </td>
+        <td>
+            AP 4.1 Quiz Blog
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Group Project Plan Check-in
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            7 
+        </td>
+        <td>
+            AP 1.4 Quiz Blog
+        </td>
+        <td>
+            Python RapidAPI, Identifying Errors
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Group Project Final Plan
+        </td>
     </tr>
 
 <tr>
@@ -21,7 +129,7 @@ permalink: /notes & vocab/
             6 
         </td>
         <td>
-            Code.org App Development Blog, CPT Initial Plan/Design
+            AWS Development
         </td>
         <td>
             n/a
@@ -30,7 +138,7 @@ permalink: /notes & vocab/
             n/a
         </td>
         <td>
-            Code.org App
+            AWS Server Setup (Docker included)
         </td>
     </tr>
 
@@ -39,16 +147,16 @@ permalink: /notes & vocab/
             5 
         </td>
         <td>
-            Code.org App Development Blog, CPT Initial Plan/Design
+            AP 1.1-1.3 Quiz Blog
+        </td>
+        <td>
+            Java Table, Java (IPYNB)
         </td>
         <td>
             n/a
         </td>
         <td>
-            n/a
-        </td>
-        <td>
-            Code.org App
+            Submenu, Group Planning for Final Project
         </td>
     </tr>
 
@@ -57,7 +165,7 @@ permalink: /notes & vocab/
             4 
         </td>
         <td>
-            Code.org App Development Blog, CPT Initial Plan/Design
+            Testing Local Server Functions, Program Purpose - Mani's Idea
         </td>
         <td>
             n/a
@@ -66,7 +174,7 @@ permalink: /notes & vocab/
             n/a
         </td>
         <td>
-            Code.org App
+            Personal Flask Server, Setting up Fastpages local server, Docker Setup
         </td>
     </tr>
 
@@ -174,3 +282,63 @@ permalink: /notes & vocab/
 [Code.org App](https://studio.code.org/projects/applab/dK3rsj1wyrLTotdtTSvEog1SQxyveOZOI9EupNZpdQE)
 
 [CPT Initial Concept/Design](https://manigggg18.github.io/manimani/markdown/2022/09/11/cpt1.html)
+
+## Week 4
+Testing Local Server Functions
+
+Program Purpose - Mani's Idea
+
+Personal Flask Server
+
+Setting up Fastpages local server
+
+Docker Setup
+
+## Week 5
+AP 1.1-1.3 Quiz Blog
+
+Java Table
+
+Java (IPYNB)
+
+Submenu
+
+Group Planning for Final Project
+
+## Week 6
+AWS Development
+
+AWS Server Setup (Docker included)
+
+## Week 7
+AP 1.4 Quiz Blog
+
+Python RapidAPI
+
+Identifying Errors
+
+Group Project Final Plan
+
+## Week 8
+AP 4.1 Quiz Blog
+
+Group Project Plan Check-in
+
+## Week 9
+Python Web API Endpoints using Songs
+
+Javascript Web Page using an API
+
+Fetch of Backend Songs
+
+Working On Final Project
+
+## Week 10
+Working on Final Project
+
+## Week 11
+N@tm Blog
+
+Final Project Finished
+
+## Week 12
