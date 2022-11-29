@@ -654,7 +654,7 @@ window.onload = wrap_img;
 <span class="n">Verb</span> <span class="o">=</span> <span class="s2">&quot;is&quot;</span> 
 <span class="n">abrev</span> <span class="o">=</span> <span class="n">subtring</span><span class="p">(</span><span class="n">Noun</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> 
 <span class="n">yoda</span> <span class="o">=</span> <span class="n">concat</span><span class="p">(</span><span class="n">Adjective2</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">Adjective</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">abrev</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span><span class="n">Verb</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">yoda</span><span class="p">)</span>
+<span class="n">display</span><span class="p">[</span><span class="n">yoda</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -678,14 +678,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">&quot;choclate&quot;</span> 
-<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">&quot;rasin&quot;</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;choclate&quot;</span><span class="p">)</span> 
+<span class="n">cookie2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;rasin&quot;</span><span class="p">)</span> 
 <span class="n">len1</span> <span class="o">=</span> <span class="n">cookie</span> <span class="o">/</span> <span class="mi">2</span> 
 <span class="n">len2</span> <span class="o">=</span> <span class="n">cookie2</span> <span class="o">*</span> <span class="mi">45</span> 
 <span class="n">vote1</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie</span><span class="p">,</span> <span class="s2">&quot;vote&quot;</span><span class="p">,</span> <span class="n">len2</span><span class="p">)</span> 
 <span class="n">vote2</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie2</span><span class="p">,</span> <span class="s2">&quot;vote&quot;</span><span class="p">,</span> <span class="n">len1</span><span class="p">)</span> 
-<span class="n">votes</span> <span class="o">=</span> <span class="p">(</span><span class="n">concat</span><span class="p">(</span><span class="n">vote1</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">vote2</span><span class="p">))</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span>
+<span class="n">votes</span> <span class="o">=</span> <span class="n">concat</span><span class="p">(</span><span class="n">vote1</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">vote2</span><span class="p">)</span> 
+<span class="n">display</span><span class="p">[</span><span class="n">votes</span><span class="p">]</span>
 </pre></div>
 
     </div>
