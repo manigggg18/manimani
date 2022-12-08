@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Class Notes | A Blog of Some Kind</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Class Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Merely a tool for mastering Computer Science." />
+<meta property="og:description" content="Merely a tool for mastering Computer Science." />
+<link rel="canonical" href="https://manigggg18.github.io/manimani/jupyter/nv" />
+<meta property="og:url" content="https://manigggg18.github.io/manimani/jupyter/nv" />
+<meta property="og:site_name" content="A Blog of Some Kind" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-06T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Class Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-06T00:00:00-06:00","datePublished":"2022-12-06T00:00:00-06:00","description":"Merely a tool for mastering Computer Science.","headline":"Class Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://manigggg18.github.io/manimani/jupyter/nv"},"url":"https://manigggg18.github.io/manimani/jupyter/nv"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/manimani/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://manigggg18.github.io/manimani/feed.xml" title="A Blog of Some Kind" /><link rel="shortcut icon" type="image/x-icon" href="/manimani/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/manimani/">A Blog of Some Kind</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/manimani/about/">About Me</a><a class="page-link" href="/manimani/notes%20&%20vocab/">Notes &amp; Vocab</a><a class="page-link" href="/manimani/javascript/">Misc</a><a class="page-link" href="/manimani/lessons/">Lessons</a><a class="page-link" href="/manimani/categories/">Tags</a><a class="page-link" href="/manimani/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Class Notes</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-06T00:00:00-06:00" itemprop="datePublished">
+        Dec 6, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/manimani/categories/#lesson">lesson</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/manigggg18/manimani/tree/master/_notebooks/2022-12-06-notesvocab.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/manimani/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/manigggg18/manimani/master?filepath=_notebooks%2F2022-12-06-notesvocab.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/manimani/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/manigggg18/manimani/blob/master/_notebooks/2022-12-06-notesvocab.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/manimani/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fmanigggg18%2Fmanimani%2Fblob%2Fmaster%2F_notebooks%2F2022-12-06-notesvocab.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/manimani/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-06-notesvocab.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Unit-2">Unit 2<a class="anchor-link" href="#Unit-2"> </a></h2><h4 id="Bits">Bits<a class="anchor-link" href="#Bits"> </a></h4><p>A bit (binary digit) is the smallest unit of data that a computer can process and store. A bit is always in one of two physical states, similar to an on/off light switch. The state is represented by a single binary value, usually a 0 or 1.</p>
+<h4 id="Bytes">Bytes<a class="anchor-link" href="#Bytes"> </a></h4><p>In most computer systems, a byte is a unit of data that is eight binary digits long. A byte is the unit most computers use to represent a character such as a letter, number or typographic symbol. Each byte can hold a string of bits that need to be used in a larger unit for application purposes.</p>
+<h4 id="Hexadecimal-/-Nibbles">Hexadecimal / Nibbles<a class="anchor-link" href="#Hexadecimal-/-Nibbles"> </a></h4><p>Hexadecimal is a numbering system with base 16. It can be used to represent large numbers with fewer digits. In this system there are 16 symbols or possible digit values from 0 to 9, followed by six alphabetic characters -- A, B, C, D, E and F.</p>
+<p>In computing and digital technology, a nibble is four consecutive binary digits or half of an 8-bit byte. When referring to a byte, it is either the first four bits or the last four bits, which is why a nibble is sometimes referred to as a half-byte.</p>
+<h3 id="Binary-Numbers:">Binary Numbers:<a class="anchor-link" href="#Binary-Numbers:"> </a></h3><h4 id="Unsigned-Integer">Unsigned Integer<a class="anchor-link" href="#Unsigned-Integer"> </a></h4><p>Unsigned Integers (often called "uints") are just like integers (whole numbers) but have the property that they don't have a + or - sign associated with them. Thus they are always non-negative (zero or positive). We use uint's when we know the value we are counting will always be non-negative.</p>
+<h4 id="Signed-Integer">Signed Integer<a class="anchor-link" href="#Signed-Integer"> </a></h4><p>A signed integer is a 32-bit datum that encodes an integer in the range [-2147483648 to 2147483647]. An unsigned integer is a 32-bit datum that encodes a nonnegative integer in the range [0 to 4294967295]. The signed integer is represented in twos complement notation.</p>
+<h4 id="Floating-Point">Floating Point<a class="anchor-link" href="#Floating-Point"> </a></h4><p>A floating point number, is a positive or negative whole number with a decimal point. For example, 5.5, 0.25, and -103.342 are all floating point numbers, while 91, and 0 are not. Floating point numbers get their name from the way the decimal point can "float" to any position necessary.</p>
+<h3 id="Binary-Data-Abstractions:">Binary Data Abstractions:<a class="anchor-link" href="#Binary-Data-Abstractions:"> </a></h3><h4 id="Boolean">Boolean<a class="anchor-link" href="#Boolean"> </a></h4><p>A data type that has one of two possible values which is intended to represent the two truth values of logic and Boolean algebra.</p>
+<h4 id="Unicode/ASCII">Unicode/ASCII<a class="anchor-link" href="#Unicode/ASCII"> </a></h4><p>Unicode and ASCII are the most popular character encoding standards that are currently being used all over the world. Unicode is the universal character encoding used to process, store and facilitate the interchange of text data in any language while ASCII is used for the representation of text such as symbols, letters, digits, etc. in computers.</p>
+<h4 id="RGB">RGB<a class="anchor-link" href="#RGB"> </a></h4><p>Colors in a computer program are represented by combining 3 "pigments". These pigments are Red, Green, and Blue (which contrasts with the "primary" colors we are used to as a child). By combining some amount of Red, some amount of Green, and some amount of Blue, any (displayable) color can be achieved.</p>
+<h4 id="Variables">Variables<a class="anchor-link" href="#Variables"> </a></h4><p>A variable is a value that can change, depending on conditions or on information passed to the program. Typically, a program consists of instruction s that tell the computer what to do and data that the program uses when it is running.</p>
+<h4 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types"> </a></h4><p>A data type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data. Most programming languages support various types of data, including integer, real, character or string, and Boolean.</p>
+<h4 id="Assignment-Operators">Assignment Operators<a class="anchor-link" href="#Assignment-Operators"> </a></h4><p>Assignment operators are used to assign values to variables.</p>
+<h4 id="Lists">Lists<a class="anchor-link" href="#Lists"> </a></h4><p>A list is a sequence of several variables, grouped together under a single name. Instead of writing a program with many variables x0 , x1 , x2 , … you can define a single variable x and access its members x[0] , x[1] , x[2] , etc.</p>
+<h4 id="2D-Lists">2D Lists<a class="anchor-link" href="#2D-Lists"> </a></h4><p>A 2D array in python is a two-dimensional data structure stored linearly in the memory. It means that it has two dimensions, the rows, and the columns, and thus it also represents a matrix.</p>
+<h4 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries"> </a></h4><p>A dictionary is also called a hash, a map, a hashmap in different programming languages. The keys in a dictionary must be simple types (such as integers or strings) while the values can be of any type. Different languages enforce different type restrictions on keys and values in a dictionary.</p>
+<h4 id="Class">Class<a class="anchor-link" href="#Class"> </a></h4><p>In object-oriented programming , a class is a template definition of the method s and variable s in a particular kind of object . Thus, an object is a specific instance of a class; it contains real values instead of variables. The class is one of the defining ideas of object-oriented programming.</p>
+<h4 id="Algorithms">Algorithms<a class="anchor-link" href="#Algorithms"> </a></h4><p>A programming algorithm is a procedure or formula used for solving a problem. It is based on conducting a sequence of specified actions in which these actions describe how to do something, and your computer will do it exactly that way every time. An algorithm works by following a procedure, made up of inputs.</p>
+<h4 id="Sequence">Sequence<a class="anchor-link" href="#Sequence"> </a></h4><p>In programming, sequence is a basic algorithm: A set of logical steps carried out in order. Computers need instructions in the form of an algorithm in order to complete a desired task, and this algorithm must have the correct order of steps, or sequence.</p>
+<h4 id="Selection">Selection<a class="anchor-link" href="#Selection"> </a></h4><p>Selection is a programming construct where a section of code is run only if a condition is met. In programming, there are occasions when a decision needs to be made. Selection is the process of making a decision. The result of the decision determines which path the program will take next.</p>
+<h4 id="Iteration">Iteration<a class="anchor-link" href="#Iteration"> </a></h4><p>In programming specifically, iterative refers to a sequence of instructions or code being repeated until a specific end result is achieved. Iterative development is sometimes called circular or evolutionary development.</p>
+<h4 id="Expressions">Expressions<a class="anchor-link" href="#Expressions"> </a></h4><p>In programming language terminology, an “expression” is a combination of values and functions that are combined and interpreted by the compiler to create a new value, as opposed to a “statement” which is just a standalone unit of execution and doesn't return anything.</p>
+<h4 id="Comparison-Operators">Comparison Operators<a class="anchor-link" href="#Comparison-Operators"> </a></h4><p>Comparison operators can compare numbers or strings and perform evaluations. Expressions that use comparison operators do not return a number value as do arithmetic expressions. Comparison expressions return either 1 , which represents true, or 0 , which represents false.</p>
+<h4 id="Booleans-Expressions-and-Selection">Booleans Expressions and Selection<a class="anchor-link" href="#Booleans-Expressions-and-Selection"> </a></h4><h4 id="Booleans-Expressions-and-Iteration">Booleans Expressions and Iteration<a class="anchor-link" href="#Booleans-Expressions-and-Iteration"> </a></h4><h4 id="Truth-Tables">Truth Tables<a class="anchor-link" href="#Truth-Tables"> </a></h4><h4 id="Characters">Characters<a class="anchor-link" href="#Characters"> </a></h4><h4 id="Strings">Strings<a class="anchor-link" href="#Strings"> </a></h4><h4 id="Length">Length<a class="anchor-link" href="#Length"> </a></h4><h4 id="Concatenation">Concatenation<a class="anchor-link" href="#Concatenation"> </a></h4><h4 id="Upper">Upper<a class="anchor-link" href="#Upper"> </a></h4><h4 id="Lower">Lower<a class="anchor-link" href="#Lower"> </a></h4><h4 id="Traversing-Strings">Traversing Strings<a class="anchor-link" href="#Traversing-Strings"> </a></h4><h4 id="Python-If">Python If<a class="anchor-link" href="#Python-If"> </a></h4><h4 id="Elif">Elif<a class="anchor-link" href="#Elif"> </a></h4><h4 id="Else-conditionals">Else conditionals<a class="anchor-link" href="#Else-conditionals"> </a></h4><h4 id="Nested-Selection-Statements">Nested Selection Statements<a class="anchor-link" href="#Nested-Selection-Statements"> </a></h4><h4 id="Python-For">Python For<a class="anchor-link" href="#Python-For"> </a></h4><h4 id="While-loops-with-Range">While loops with Range<a class="anchor-link" href="#While-loops-with-Range"> </a></h4><h4 id="with-List">with List<a class="anchor-link" href="#with-List"> </a></h4><h4 id="Combining-loops-with-conditionals-to-Break">Combining loops with conditionals to Break<a class="anchor-link" href="#Combining-loops-with-conditionals-to-Break"> </a></h4><h4 id="Continue">Continue<a class="anchor-link" href="#Continue"> </a></h4><h4 id="Procedural-Abstraction">Procedural Abstraction<a class="anchor-link" href="#Procedural-Abstraction"> </a></h4><h4 id="Python-Def-procedures">Python Def procedures<a class="anchor-link" href="#Python-Def-procedures"> </a></h4><h4 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h4><h4 id="Return-Values">Return Values<a class="anchor-link" href="#Return-Values"> </a></h4>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="manigggg18/manimani"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/manimani/jupyter/nv" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/manimani/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/manimani/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/manimani/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Merely a tool for mastering Computer Science.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/manimani/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/Mani26393347 “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/manimani/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UCDCoC16kj3pPgf53Mr8_Jcw “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/manimani/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
