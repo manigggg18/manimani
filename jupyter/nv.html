@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      16 min read
     
 </span></p>
 
@@ -198,6 +198,713 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="n">num3</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="n">num1</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="n">num2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>42
+42
+15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num2</span> <span class="o">+=</span> <span class="n">num1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>42
+84
+4284
+126
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">colorsList</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pink&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">colorsList</span><span class="p">)</span>
+
+<span class="n">colorsList</span><span class="o">=</span><span class="p">[]</span> <span class="c1"># can be used if you want to create a list that can be filled with values later</span>
+
+<span class="c1"># copy of the list is made; the list isn&#39;t sorted in place</span>
+<span class="k">def</span> <span class="nf">Reverse</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span> <span class="c1"># defining variable: lst </span>
+    <span class="n">new_lst</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
+    <span class="k">return</span> <span class="n">new_lst</span>
+ 
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pink&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;purple&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;black&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Reverse</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span> <span class="c1"># reverse 1st</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;pink&#39;, &#39;yellow&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;orange&#39;]
+[&#39;black&#39;, &#39;blue&#39;, &#39;orange&#39;, &#39;yellow&#39;, &#39;purple&#39;, &#39;green&#39;, &#39;pink&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Use a dictionary for the questions</span>
+<span class="n">quesList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;To be or not to be?&quot;</span><span class="p">,</span> <span class="s2">&quot;What&#39;s your name?&quot;</span><span class="p">,</span> <span class="s2">&quot;How was break?&quot;</span><span class="p">,</span> <span class="s2">&quot;Is this homework?&quot;</span><span class="p">]</span>
+
+<span class="c1"># Use a dictionary for the correct solutions</span>
+<span class="n">soluList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;idk&quot;</span><span class="p">,</span> <span class="s2">&quot;mani&quot;</span><span class="p">,</span> <span class="s2">&quot;fine&quot;</span><span class="p">,</span> <span class="s2">&quot;yea&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">quesList</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    
+<span class="n">value1</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s2">&quot;Q1&quot;</span><span class="p">)</span>
+<span class="n">value2</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s2">&quot;Q2&quot;</span><span class="p">)</span>
+<span class="n">value3</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s2">&quot;Q3&quot;</span><span class="p">)</span>
+<span class="n">value4</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s2">&quot;Q4&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">soluList</span><span class="p">:</span> 
+    <span class="k">if</span> <span class="n">value1</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">soluList</span><span class="p">:</span> 
+    <span class="k">if</span> <span class="n">value2</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+<span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">soluList</span><span class="p">:</span> 
+    <span class="k">if</span> <span class="n">value3</span> <span class="o">==</span> <span class="n">z</span><span class="p">:</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+<span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">soluList</span><span class="p">:</span> 
+    <span class="k">if</span> <span class="n">value4</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Final score: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>To be or not to be?
+What&#39;s your name?
+How was break?
+Is this homework?
+Final score: 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>
+<span class="n">Num1</span> <span class="o">=</span> <span class="n">Num2</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">%</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;curly&quot;</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;brown&quot;</span>
+<span class="n">length</span> <span class="o">=</span> <span class="s2">&quot;short&quot;</span>
+<span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;straight&quot;</span>
+<span class="n">hair</span> <span class="o">=</span> <span class="nb">type</span> <span class="o">+</span> <span class="n">color</span> <span class="o">+</span> <span class="n">length</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hair</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>straightbrownshort
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;football&quot;</span><span class="p">,</span> <span class="s2">&quot;soccer&quot;</span><span class="p">,</span> <span class="s2">&quot;baseball&quot;</span><span class="p">,</span> <span class="s2">&quot;basketball&quot;</span><span class="p">]</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># change the value &quot;soccer&quot; to &quot;hockey&quot;</span>
+<span class="n">sports</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">sports</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+<span class="n">sports</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;hockey&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sports</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;hockey&#39;, &#39;soccer&#39;, &#39;baseball&#39;, &#39;basketball&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;alfa&quot;</span><span class="p">,</span> <span class="s2">&quot;bravo&quot;</span><span class="p">,</span> <span class="s2">&quot;charlie&quot;</span><span class="p">,</span> <span class="s2">&quot;delta&quot;</span><span class="p">,</span> <span class="s2">&quot;echo&quot;</span><span class="p">,</span> <span class="s2">&quot;foxtrot&quot;</span><span class="p">,</span> <span class="s2">&quot;golf&quot;</span><span class="p">,</span> <span class="s2">&quot;hotel&quot;</span><span class="p">,</span> <span class="s2">&quot;india&quot;</span><span class="p">,</span> <span class="s2">&quot;juliett&quot;</span><span class="p">,</span> <span class="s2">&quot;kilo&quot;</span><span class="p">,</span>
+<span class="s2">&quot;lima&quot;</span><span class="p">,</span> <span class="s2">&quot;mike&quot;</span><span class="p">,</span> <span class="s2">&quot;november&quot;</span><span class="p">,</span> <span class="s2">&quot;oscar&quot;</span><span class="p">,</span> <span class="s2">&quot;papa&quot;</span><span class="p">,</span> <span class="s2">&quot;quebec&quot;</span><span class="p">,</span> <span class="s2">&quot;romeo&quot;</span><span class="p">,</span> <span class="s2">&quot;sierra&quot;</span><span class="p">,</span> <span class="s2">&quot;tango&quot;</span><span class="p">,</span> <span class="s2">&quot;uniform&quot;</span><span class="p">,</span> <span class="s2">&quot;victor&quot;</span><span class="p">,</span> <span class="s2">&quot;whiskey&quot;</span><span class="p">,</span> <span class="s2">&quot;xray&quot;</span><span class="p">,</span> <span class="s2">&quot;yankee&quot;</span><span class="p">,</span> <span class="s2">&quot;zulu&quot;</span><span class="p">]</span>
+
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">inp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">show_letters</span><span class="p">(</span><span class="n">inp</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">let</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">letter</span> <span class="o">==</span> <span class="n">let</span><span class="p">[</span><span class="n">index</span><span class="p">]:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">let</span><span class="p">)</span>
+<span class="n">show_letters</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>bravo
+alfa
+tango
+mike
+alfa
+november
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">keypad</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">]]</span>
+
+<span class="k">def</span> <span class="nf">print_matrix3</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">matrix</span><span class="p">:</span>
+        <span class="n">itr</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">))</span>
+        
+<span class="n">print_matrix3</span><span class="p">(</span><span class="n">keypad</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3
+4 5 6
+7 8 9
+  0  
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">letters</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;`&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="s2">&quot;W&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;R&quot;</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> <span class="s2">&quot;Y&quot;</span><span class="p">,</span> <span class="s2">&quot;U&quot;</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span><span class="p">,</span> <span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="s2">&quot;[&quot;</span><span class="p">,</span> <span class="s2">&quot;]&quot;</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;S&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="s2">&quot;G&quot;</span><span class="p">,</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;J&quot;</span><span class="p">,</span> <span class="s2">&quot;K&quot;</span><span class="p">,</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">&quot;Z&quot;</span><span class="p">,</span> <span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">,</span> <span class="s2">&quot;M&quot;</span><span class="p">,</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">]]</span>
+
+<span class="n">letters_lower1</span> <span class="o">=</span> <span class="p">[</span><span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">letters</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>               <span class="c1"># additional lines of code for better capitalization</span>
+<span class="n">letters_lower2</span> <span class="o">=</span> <span class="p">[</span><span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">letters</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span>
+<span class="n">letters_lower3</span> <span class="o">=</span> <span class="p">[</span><span class="n">letter</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">letters</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">letters</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">6</span><span class="p">]</span> <span class="o">+</span> <span class="n">letters_lower2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">letters_lower3</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">letters_lower1</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letters</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">6</span><span class="p">]</span> <span class="o">+</span> <span class="n">letters_lower2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">letters_lower1</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letters</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">9</span><span class="p">]</span> <span class="o">+</span> <span class="n">letters</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">9</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mani
+May
+18
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;100 == 100:&quot;</span><span class="p">,</span><span class="mi">100</span><span class="o">==</span><span class="mi">100</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello == Adios:&quot;</span><span class="p">,</span><span class="s2">&quot;greeting&quot;</span><span class="o">==</span><span class="s2">&quot;farewell&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello != Adios:&quot;</span><span class="p">,</span><span class="s2">&quot;greeting&quot;</span><span class="o">!=</span><span class="s2">&quot;farewell&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello == Hola:&quot;</span><span class="p">,</span><span class="s2">&quot;greeting&quot;</span><span class="o">==</span><span class="s2">&quot;greeting&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5&gt;=4:&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="o">&gt;=</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Notice that relational operators can even work on lists!</span>
+<span class="c1"># For lists, the relational operator compares each respective component until an answer is derived</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;] &gt; [&#39;x&#39;,&#39;y&#39;,&#39;z&#39;]:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1,2,3,5] &gt; [1,2,3,4]:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="o">&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1,2,3,5] &lt; [1,2,3,4]:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1,2,3,5] == [1,2,3,4]:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>100 == 100: True
+Hello == Adios: False
+Hello != Adios: True
+Hello == Hola: True
+5&gt;=4: True
+
+[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;] &gt; [&#39;x&#39;,&#39;y&#39;,&#39;z&#39;]: False
+[1,2,3,5] &gt; [1,2,3,4]: True
+[1,2,3,5] &lt; [1,2,3,4]: False
+[1,2,3,5] == [1,2,3,4]: False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 &gt; 2 or 5 &lt; 12:&quot;</span><span class="p">,</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">or</span> <span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">)</span>
+<span class="c1"># Output TRUE  using OR ^</span>
+
+
+<span class="c1"># Output FALSE using NOT</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;24 &gt; 8:&quot;</span><span class="p">,</span> <span class="ow">not</span> <span class="mi">24</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">)</span>
+
+<span class="c1"># Output FALSE using AND</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;10 &gt; 20:&quot;</span><span class="p">,</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">20</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 &gt; 2 or 5 &lt; 12: True
+24 &gt; 8: False
+10 &gt; 20: False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cost</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">stat</span> <span class="o">=</span> <span class="mi">1</span>       
+<span class="k">if</span> <span class="n">stat</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this product is no good&quot;</span><span class="p">)</span> 
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">cost</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="ow">and</span> <span class="n">stat</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this product is too expensive&quot;</span><span class="p">)</span> 
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="mi">50</span> <span class="o">&gt;</span> <span class="n">cost</span> <span class="o">&gt;</span> <span class="mi">25</span> <span class="ow">and</span> <span class="n">stat</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a regular product&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a cheap product&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>this is a regular product
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Which movie is a comedy?&quot;</span><span class="p">:[</span><span class="s2">&quot;a. The King&#39;s Man&quot;</span><span class="p">,</span><span class="s2">&quot;b. What&#39;s eating Gilbert Grape&quot;</span><span class="p">,</span> <span class="s2">&quot;c. About Time&quot;</span><span class="p">,</span> <span class="s2">&quot;d. Batman&quot;</span><span class="p">],</span> 
+    <span class="s2">&quot;Which movie features 50 Cent?&quot;</span><span class="p">:[</span><span class="s2">&quot;a. Shaft&quot;</span><span class="p">,</span> <span class="s2">&quot;b. 8 Mile&quot;</span><span class="p">,</span><span class="s2">&quot;c. Southpaw&quot;</span><span class="p">,</span> <span class="s2">&quot;d. Batman&quot;</span><span class="p">],</span> 
+    <span class="s2">&quot;Who is the best Batman?&quot;</span><span class="p">:[</span><span class="s2">&quot;a. Christian Bale&quot;</span><span class="p">,</span><span class="s2">&quot;b. Ben Affleck&quot;</span><span class="p">,</span> <span class="s2">&quot;c. Robert Pattinson&quot;</span><span class="p">,</span> <span class="s2">&quot;d. Kevin Conroy&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+
+<span class="n">answers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Which movie is a comedy?&quot;</span><span class="p">:</span><span class="s2">&quot;c&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Which movie features 50 Cent?&quot;</span><span class="p">:</span><span class="s2">&quot;c&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Who is the best Batman?&quot;</span><span class="p">:</span><span class="s2">&quot;d&quot;</span>
+    <span class="p">}</span>
+
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ready for a movie quiz?&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">q</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="n">questions</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+
+    <span class="n">inp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter Your Answer&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">answers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="o">==</span><span class="n">inp</span><span class="p">):</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SYNTAX ERROR...jk try again&quot;</span><span class="p">)</span>
+        <span class="k">break</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Final Score:&#39;</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span>  
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ready for a movie quiz?
+Which movie is a comedy?
+a. The King&#39;s Man b. What&#39;s eating Gilbert Grape c. About Time d. Batman
+Which movie features 50 Cent?
+a. Shaft b. 8 Mile c. Southpaw d. Batman
+Who is the best Batman?
+a. Christian Bale b. Ben Affleck c. Robert Pattinson d. Kevin Conroy
+Final Score: 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>       <span class="c1"># module for generating random item from a list</span>
+
+<span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">))</span>       <span class="c1"># list of numbers</span>
+
+<span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>     <span class="c1"># int takes the integer, random utilizes the module</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>     <span class="c1"># the three numbers are generated here</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">end</span><span class="p">():</span>          <span class="c1"># procedure for endgame </span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Okay I guess&quot;</span><span class="p">)</span>
+
+<span class="n">rd</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Are you ready? y/n&quot;</span><span class="p">)</span>        <span class="c1"># useless prompt to initiate the game       </span>
+
+<span class="k">if</span> <span class="n">rd</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>  
+    <span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;continue?y/n&quot;</span><span class="p">)</span>       <span class="c1"># basically a checkpoint</span>
+    <span class="n">cn</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">cn</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;continue?y/n&quot;</span><span class="p">)</span>
+        <span class="n">cn2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">cn2</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">num3</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">num1</span> <span class="o">&gt;</span> <span class="n">num2</span> <span class="ow">and</span> <span class="n">num1</span> <span class="o">&gt;</span> <span class="n">num3</span><span class="p">:</span>         <span class="c1"># checks if num1 is the greatest</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your Score:&quot;</span> <span class="p">,</span> <span class="n">num1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">num2</span> <span class="o">&gt;</span> <span class="n">num1</span> <span class="ow">and</span> <span class="n">num2</span> <span class="o">&gt;</span> <span class="n">num3</span><span class="p">:</span>         <span class="c1"># checks if num2 is the greatest</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your Score:&quot;</span> <span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">num3</span> <span class="o">&gt;</span> <span class="n">num1</span> <span class="ow">and</span> <span class="n">num3</span> <span class="o">&gt;</span> <span class="n">num2</span><span class="p">:</span>         <span class="c1"># checks if num3 is the greatest</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your Score:&quot;</span> <span class="p">,</span> <span class="n">num3</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">end</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">end</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">end</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4
+continue?y/n
+18
+continue?y/n
+8
+Your Score: 18
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
