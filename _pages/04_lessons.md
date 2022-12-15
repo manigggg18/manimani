@@ -72,7 +72,7 @@ permalink: /lessons/
             5
         </td>
         <td>
-            3.8-3.10
+            3.9-3.11
         </td>
         <td>
             .9/1
@@ -86,7 +86,49 @@ permalink: /lessons/
             6
         </td>
         <td>
-            3.9-3.11
+            3.12-3.13
+        </td>
+        <td>
+            .9/1
+        </td>
+    </tr>
+
+<tr>
+
+<tr>
+        <td>
+            7
+        </td>
+        <td>
+            3.14-3.15
+        </td>
+        <td>
+            .95/1
+        </td>
+    </tr>
+
+<tr>
+
+<tr>
+        <td>
+            8
+        </td>
+        <td>
+            3.16
+        </td>
+        <td>
+            TBA
+        </td>
+    </tr>
+
+<tr>
+
+<tr>
+        <td>
+            9
+        </td>
+        <td>
+            3.17-3.18
         </td>
         <td>
             TBA
