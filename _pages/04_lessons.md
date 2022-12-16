@@ -131,7 +131,7 @@ permalink: /lessons/
             3.17-3.18
         </td>
         <td>
-            TBA
+            .87
         </td>
     </tr>
 
