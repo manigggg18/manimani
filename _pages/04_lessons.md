@@ -117,7 +117,7 @@ permalink: /lessons/
             3.16
         </td>
         <td>
-            TBA
+            .8
         </td>
     </tr>
 
