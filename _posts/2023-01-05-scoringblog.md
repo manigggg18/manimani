@@ -22,13 +22,13 @@ permalink: /cbscoring
             Program Purpose and Function 
         </td>
         <td>
-            n/a
+            0
         </td>
         <td>
-            n/a
+            0
         </td>
         <td>
-            n/a
+            CollegeBoard clearly states that the video and the written response should state the program's purpose, not its functionality.
         </td>
     </tr>
 
@@ -37,13 +37,13 @@ permalink: /cbscoring
             Data Abstraction 
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
-            n/a
+            All requirements are met. Code segments are provided and the specified material is further explored in the written response.
         </td>
     </tr>
 
@@ -52,13 +52,13 @@ permalink: /cbscoring
             Managing Complexity 
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
-            n/a
+            0
         </td>
         <td>
-            n/a
+            It looks like the author completely explains how the task of managing complexity was accomplished by the usage of the documented database. However, apparently I'm wrong. 
         </td>
     </tr>
 
@@ -67,10 +67,10 @@ permalink: /cbscoring
             Procedural Abstraction 
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
@@ -82,10 +82,10 @@ permalink: /cbscoring
             Algorithm Implementation 
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
@@ -97,10 +97,10 @@ permalink: /cbscoring
             Testing 
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
@@ -129,7 +129,7 @@ permalink: /cbscoring
             n/a
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
@@ -144,7 +144,7 @@ permalink: /cbscoring
             n/a
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
@@ -159,7 +159,7 @@ permalink: /cbscoring
             n/a
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
@@ -174,7 +174,7 @@ permalink: /cbscoring
             n/a
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
@@ -189,7 +189,7 @@ permalink: /cbscoring
             n/a
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
@@ -204,7 +204,7 @@ permalink: /cbscoring
             n/a
         </td>
         <td>
-            n/a
+            1
         </td>
         <td>
             n/a
