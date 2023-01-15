@@ -18,16 +18,106 @@ permalink: /notes & vocab/
 
 <tr>
         <td>
+            17 
+        </td>
+        <td>
+            CPT Scoring #1
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Working on CodeCrunch
+        </td>
+        <td>
+            CPT Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            16 
+        </td>
+        <td>
+            Lesson 7 Hacks
+        </td>
+        <td>
+            14-15, 16, 17-18, Vocab
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Teaching Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            15 
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            8-10, 9-11, 12-13
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Teaching Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            14 
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            1-2, 3-4, 5-7
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Teaching Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            13 
+        </td>
+        <td>
+            Binary, Section 3 Notes & Plans
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Teaching Preparation
+        </td>
+        <td>
+            Teaching Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
             12 
         </td>
         <td>
-            n/a
+            Trimester 1 Final Corrections Blog
         </td>
         <td>
             n/a
         </td>
         <td>
-            n/a
+            Finals
         </td>
         <td>
             n/a
@@ -344,3 +434,40 @@ permalink: /notes & vocab/
 [Final Project Finished](https://kaiden-dough.github.io/lawnmowers-fastpages/)
 
 ## Week 12
+[Finals](https://manigggg18.github.io/manimani/tri1final)
+
+## Week 13
+[Binary](https://manigggg18.github.io/manimani/binary)
+
+[Section 3 Notes and Plans](https://manigggg18.github.io/manimani/lesson)
+
+## Week 14
+[1-2](https://manigggg18.github.io/manimani/jupyter/lesson1)
+
+[3-4](https://manigggg18.github.io/manimani/jupyter/lesson2)
+
+[5-7](https://manigggg18.github.io/manimani/jupyter/lesson3)
+
+[Lesson 7 Extra](https://manigggg18.github.io/manimani/lesson7h)
+
+## Week 15
+
+[8-10](https://manigggg18.github.io/manimani/jupyter/lesson4)
+
+[9-11](https://manigggg18.github.io/manimani/jupyter/lesson5)
+
+[12-13](https://manigggg18.github.io/manimani/jupyter/lesson6)
+
+## Week 16
+
+[14-15](https://manigggg18.github.io/manimani/jupyter/lesson7)
+
+[16](https://manigggg18.github.io/manimani/jupyter/lesson8)
+
+[17-18](https://manigggg18.github.io/manimani/jupyter/lesson9)
+
+[Class Notes](https://manigggg18.github.io/manimani/jupyter/nv)
+
+## Week 17
+
+[CPT Scoring Blog](https://manigggg18.github.io/manimani/cbscoring)
