@@ -422,3 +422,6 @@ permalink: /cbscoring3
         </td>
     </tr>
 </table>
+
+
+**REFLECTION:** I am starting to understand what CollegeBoard is mostly focused on. There is an emphasis on efficiency and not complicating stuff. I should also add that there is no need to grade 4 students every week, because to be perfectly honest, the only thing that helps in these assignments is reading the comments from CB. 
