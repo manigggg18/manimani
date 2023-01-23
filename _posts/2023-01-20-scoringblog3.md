@@ -27,8 +27,9 @@ permalink: /cbscoring3
         <td>
             1
         </td>
-            The student does not demonstrate a thorough understanding of the program's purpose and functionality, providing only a basic explanation of the problem it aims to solve and how it solves it.
         <td>
+            The student does not demonstrate a thorough understanding of the program's purpose and functionality, providing only a basic explanation of the problem it aims to solve and how it solves it.
+
         </td>
     </tr>
 
@@ -42,8 +43,9 @@ permalink: /cbscoring3
         <td>
             0
         </td>
-            The student's written response does not effectively demonstrate the use of data abstraction in the program by not providing clear examples of how data is stored and used, and not explaining the significance of the list in the program.
         <td>
+            The student's written response does not effectively demonstrate the use of data abstraction in the program by not providing clear examples of how data is stored and used, and not explaining the significance of the list in the program.
+
         </td>
     </tr>
 
@@ -57,8 +59,8 @@ permalink: /cbscoring3
         <td>
             0
         </td>
-            The student's written response does not effectively demonstrate the use of managing complexity in the program by not providing a clear example of how a list is used to manage complexity and not clearly explaining its significance in the program.
         <td>
+            The student's written response does not effectively demonstrate the use of managing complexity in the program by not providing a clear example of how a list is used to manage complexity and not clearly explaining its significance in the program.
         </td>
     </tr>
 
@@ -72,8 +74,8 @@ permalink: /cbscoring3
         <td>
             0
         </td>
-            The student does not provide a clear description of what the identified procedure does and how it contributes to the overall functionality of the program.
         <td>
+            The student does not provide a clear description of what the identified procedure does and how it contributes to the overall functionality of the program.
         </td>
     </tr>
 
@@ -87,8 +89,8 @@ permalink: /cbscoring3
         <td>
             1
         </td>
-            The student provides a thorough and well-explained demonstration of algorithm implementation, including a clear code segment and detailed steps of how the algorithm works.
         <td>
+            The student provides a thorough and well-explained demonstration of algorithm implementation, including a clear code segment and detailed steps of how the algorithm works.
         </td>
     </tr>
 
@@ -102,8 +104,8 @@ permalink: /cbscoring3
         <td>
             1
         </td>
-            The student's written response does not effectively demonstrate the use of testing in the program by not providing clear examples of different calls to the selected procedure and not describing the conditions and results of each test.
         <td>
+            The student's written response does not effectively demonstrate the use of testing in the program by not providing clear examples of different calls to the selected procedure and not describing the conditions and results of each test.
         </td>
     </tr>
 </table>
@@ -131,8 +133,8 @@ permalink: /cbscoring3
         <td>
             1
         </td>
-            The student effectively demonstrates the program's functionality in the video, clearly showing how the input is processed and the resulting output."
         <td>
+            The student effectively demonstrates the program's functionality in the video, clearly showing how the input is processed and the resulting output."
         </td>
     </tr>
 
@@ -146,8 +148,8 @@ permalink: /cbscoring3
         <td>
             1
         </td>
-            The student does not demonstrate a strong understanding of data abstraction by not showing how data is stored and used in the program, and not describing the role of the list in the program.
         <td>
+            The student does not demonstrate a strong understanding of data abstraction by not showing how data is stored and used in the program, and not describing the role of the list in the program.
         </td>
     </tr>
 
@@ -176,8 +178,8 @@ permalink: /cbscoring3
         <td>
             1
         </td>
-            The student's written response effectively demonstrates the use of procedural abstraction in the program by providing clear examples of a student-developed procedure and its usage, and explaining its significance in the program.
         <td>
+            The student's written response effectively demonstrates the use of procedural abstraction in the program by providing clear examples of a student-developed procedure and its usage, and explaining its significance in the program.
         </td>
     </tr>
 
@@ -191,8 +193,8 @@ permalink: /cbscoring3
         <td>
             1
         </td>
-            The student provides a clear explanation of the algorithm in detailed steps, explaining how it works in enough detail that someone else could recreate it.
         <td>
+            The student provides a clear explanation of the algorithm in detailed steps, explaining how it works in enough detail that someone else could recreate it.
         </td>
     </tr>
 
@@ -265,8 +267,8 @@ permalink: /cbscoring3
         <td>
             0
         </td>
-            The student's written response does not effectively demonstrate the use of managing complexity in the program by not providing a clear example of how a list is used to manage complexity and not clearly explaining its significance in the program.
         <td>
+            The student's written response does not effectively demonstrate the use of managing complexity in the program by not providing a clear example of how a list is used to manage complexity and not clearly explaining its significance in the program.
         </td>
     </tr>
 
@@ -280,8 +282,8 @@ permalink: /cbscoring3
         <td>
             0
         </td>
-            The student does not provide a thorough and well-explained demonstration of procedural abstraction, missing key components such as code segments and an accurate description of the procedure's functionality and its contribution to the overall program.
         <td>
+            The student does not provide a thorough and well-explained demonstration of procedural abstraction, missing key components such as code segments and an accurate description of the procedure's functionality and its contribution to the overall program.
         </td>
     </tr>
 
@@ -400,8 +402,8 @@ permalink: /cbscoring3
         <td>
             1
         </td>
-            The student's written response effectively demonstrates the use of algorithm implementation in the program by providing a clear example of a student-developed algorithm and explaining its functionality in detailed steps.
         <td>
+            The student's written response effectively demonstrates the use of algorithm implementation in the program by providing a clear example of a student-developed algorithm and explaining its functionality in detailed steps.
         </td>
     </tr>
 
