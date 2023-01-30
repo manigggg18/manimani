@@ -3,8 +3,8 @@ toc: true
 comments: true
 layout: post
 categories: [markdown]
-title: Trimester 2 MCQ Test Review/Corrections
-permalink: /tri2final
+title: CPT Planning Blog
+permalink: /cptpl
 ---
 
 Start outline/write-up of materials required for CollegeBoard: For the written portion of the Create Performance Task, I will be submitting a detailed project plan outlining the materials and resources required for the development of my website, including the technologies used (HTML, CSS, JavaScript, APIs, and Databases), as well as a breakdown of the various features and functionalities of the website.
