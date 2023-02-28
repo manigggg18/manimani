@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -150,8 +150,13 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="A">A<a class="anchor-link" href="#A"> </a></h1><h3 id="3ai">3ai<a class="anchor-link" href="#3ai"> </a></h3><p>The purpose of this program is to create a system where the highest score of each user is stored and displayed using a table.</p>
-<h3 id="3aii">3aii<a class="anchor-link" href="#3aii"> </a></h3><h3 id="3aiii">3aiii<a class="anchor-link" href="#3aiii"> </a></h3><h1 id="B">B<a class="anchor-link" href="#B"> </a></h1><h3 id="3bi">3bi<a class="anchor-link" href="#3bi"> </a></h3>
+<h1 id="A">A<a class="anchor-link" href="#A"> </a></h1><blockquote><p><a href="https://drive.google.com/file/d/1eR_ds-qY4REFX6Y2eEE3mEpO6pbxCdVU/view?usp=sharing">Video</a></p>
+<h3 id="3ai">3ai<a class="anchor-link" href="#3ai"> </a></h3>
+</blockquote>
+<p>The purpose of this program is to create a system where the highest score of each user is stored and displayed using a table.</p>
+<h3 id="3aii">3aii<a class="anchor-link" href="#3aii"> </a></h3><p>The video demonstrates a user gaining a score. If the score is their highest score, it will be added to the database.</p>
+<h3 id="3aiii">3aiii<a class="anchor-link" href="#3aiii"> </a></h3><p>The input demonstrated in the video is the user's the score that they will gain at the end of the game. The output is the highest score stored in the table.</p>
+<h1 id="B">B<a class="anchor-link" href="#B"> </a></h1><h3 id="3bi">3bi<a class="anchor-link" href="#3bi"> </a></h3>
 </div>
 </div>
 </div>
@@ -268,6 +273,13 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="3ciii">3ciii<a class="anchor-link" href="#3ciii"> </a></h3><p>The "create" function is being called as a method of an object, where it adds itself to the session, commits the changes to the database, and returns itself if successful. If there is an integrity error, it removes the session and returns None. In the "initHighscores" function, the database is initialized and tables are created using the Flask app context and the SQLAlchemy library's "create_all" method.</p>
+<h3 id="3civ">3civ<a class="anchor-link" href="#3civ"> </a></h3><p>This algorithm creates an instance of a class and adds it to a database session. If the session commit fails due to an IntegrityError, the session is removed and the function returns None. Additionally, it initializes a Flask app context and creates a database and its tables using SQLAlchemy.</p>
+<h1 id="D">D<a class="anchor-link" href="#D"> </a></h1><h3 id="3di">3di<a class="anchor-link" href="#3di"> </a></h3><p><img src="https://github.com/manigggg18/manimani/blob/master/images/m.png?raw=true" alt="img1" /></p>
+<hr />
+<p><img src="https://github.com/manigggg18/manimani/blob/master/images/mmmmm.png?raw=true" alt="img2" /></p>
+<h3 id="3dii">3dii<a class="anchor-link" href="#3dii"> </a></h3><p>The first call checks if the user's score will be added to the table since they got the highest score possible.</p>
+<p>The second call checks that the user's score does not get added since it is the user's lowest score.</p>
+<h3 id="3diii">3diii<a class="anchor-link" href="#3diii"> </a></h3><p>The user's score gets added to the "highscores" table in the first call, while the user's score does not get added to the "highscores" table in the second call</p>
 
 </div>
 </div>
