@@ -52,7 +52,7 @@ permalink: /tritwomcq
 
 #### A computer scientist is analyzing four different algorithms used to sort a list. The table below shows the number of steps each algorithm took to sort lists of different sizes.
 
-![]({{site.baseurl}}/images/dapng.png)
+![]({{site.baseurl}}/images/boz.png)
 
 #### Based on the values in the table, which of the algorithms appear to run in reasonable time?
 
