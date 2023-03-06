@@ -18,6 +18,150 @@ permalink: /notes & vocab/
 
 <tr>
         <td>
+            25
+        </td>
+        <td>
+            --
+        </td>
+        <td>
+            --
+        </td>
+        <td>
+            --
+        </td>
+        <td>
+            -- 
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            24
+        </td>
+        <td>
+            Tri 2 MCQ #2  
+        </td>
+        <td>
+            Create Performance Task
+        </td>
+        <td>
+            Code Crunch FINISHED!!!
+        </td>
+        <td>
+            CPT Week (Finals week)
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            23
+        </td>
+        <td>
+            Tri 2 N@tM Blog
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Working on CodeCrunch
+        </td>
+        <td>
+            CPT Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            22
+        </td>
+        <td>
+            5.5, 5.6
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Working on CodeCrunch
+        </td>
+        <td>
+            CPT Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            21
+        </td>
+        <td>
+            5.3, 5.4, CPT Planning Blog
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Working on CodeCrunch
+        </td>
+        <td>
+            CPT Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            20
+        </td>
+        <td>
+            Tri 2 MCQ Test #1, 5.1, 5.2
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Working on CodeCrunch
+        </td>
+        <td>
+            CPT Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            19 
+        </td>
+        <td>
+            CPT Scoring #3
+        </td>
+        <td>
+            n/a
+        </td>
+        <td>
+            Working on CodeCrunch
+        </td>
+        <td>
+            CPT Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            18
+        </td>
+        <td>
+            CPT Scoring #2, CPT Progress Blog
+        </td>
+        <td>
+            Model and Object-Oriented Programming
+        </td>
+        <td>
+            Working on CodeCrunch
+        </td>
+        <td>
+            CPT Week
+        </td>
+    </tr>
+
+<tr>
+        <td>
             17 
         </td>
         <td>
@@ -471,3 +615,45 @@ permalink: /notes & vocab/
 ## Week 17
 
 [CPT Scoring Blog](https://manigggg18.github.io/manimani/cbscoring)
+
+## Week 18
+
+[CPT Scoring Blog 2](https://manigggg18.github.io/manimani/cbscoring2)
+
+[CPT Progress Blog](https://manigggg18.github.io/manimani/cptpr)
+
+[Model and Object-Oriented Programming](https://manigggg18.github.io/manimani/jupyter/2023/01/10/PBL-model.html)
+
+## Week 19
+
+[CPT Scoring Blog #3](https://manigggg18.github.io/manimani/cbscoring3)
+
+## Week 20
+
+[Tri 2 MCQ Test #1](https://manigggg18.github.io/manimani/tri2final)
+
+[5.1 and 5.2](https://manigggg18.github.io/manimani/fives)
+
+## Week 21
+
+[5.3 and 5.4](https://manigggg18.github.io/manimani/fives2)
+
+[CPT Planning Blog](https://manigggg18.github.io/manimani/cptpl)
+
+## Week 22
+
+[5.5 and 5.6](https://manigggg18.github.io/manimani/fives3)
+
+## Week 23
+
+[Tri 2 N@tM](https://manigggg18.github.io/manimani/tri2natm)
+
+## Week 24
+
+[Code Crunch](https://sreejagangapuram.github.io/Code-Crunch/game)
+
+[Tri 2 MCQ Test #2](https://manigggg18.github.io/manimani/tritwomcq)
+
+[CPT Blog](https://manigggg18.github.io/manimani/cccppt)
+
+## Week 25
