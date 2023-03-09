@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      13 min read
     
 </span></p>
 
@@ -206,9 +206,16 @@ window.onload = wrap_img;
 <p>Describe some of the meta data and considerations when managing Image files.  Describe how these relate to Data Compression ...</p>
 <ul>
 <li>File Type, PNG and JPG are two types used in this lab</li>
+</ul>
+<p><strong>JPG files use lossy compression, which means that some data is lost when the image is compressed and thus, results in a reduction in image quality. However, it also results in smaller file sizes. PNG files, on the other hand, use lossless compression, which means that no data is lost during compression. This results in larger file sizes but better image quality.</strong></p>
+<ul>
 <li>Size, height and width, number of pixels</li>
+</ul>
+<p><strong>The size of an image file refers to the amount of storage space it takes up. The larger the file size, the more storage space it will take up. Larger files can cause slower performance. Height and width refer to the dimensions of the image. The height and width of an image determine its aspect ratio, which is the ratio of the width to the height. The number of pixels in an image is the total number of dots or points that make up the image. The more pixels an image has, the higher its resolution and the sharper and more detailed the image will appear. However, more pixels also mean a larger file size and slower performance.</strong></p>
+<ul>
 <li>Visual perception, lossy compression</li>
 </ul>
+<p><strong>Visual perception is influenced by factors such as color, contrast, brightness, and detail. It's important to consider how the images will be viewed and ensure that they are optimized accordingly.Lossy compression is a method of reducing the file size of an image by discarding some of the data that makes up the image. This can result in a significant reduction in file size, but can also result in a loss of image quality.</strong></p>
 
 </div>
 </div>
@@ -233,16 +240,61 @@ window.onload = wrap_img;
 </h3>
 <blockquote>
 <p>File paths are different on Windows versus Mac and Linux.  This can cause problems in a project as you work and deploy on different Operating Systems (OS's), pathlib is a solution to this problem.</p>
+</blockquote>
 <ul>
 <li>What are commands you use in terminal to access files?</li>
+</ul>
+<p><strong>I have never used a macOS in my entire life.</strong></p>
+<ul>
 <li>What are the command you use in Windows terminal to access files?</li>
+</ul>
+<p><strong>Some of these commands include:</strong>
+<strong>- <code>cd</code>: changing directory, navigating files</strong></p>
+<p><strong>- <code>ls</code>: listing directory, monitoring the contents in a directory</strong></p>
+<p><strong>- <code>mkdir</code>: create directory</strong></p>
+<p><strong>- <code>sudo</code>: execute commands</strong></p>
+<p><strong>- <code>exit</code>: ...exit</strong></p>
+<p><strong>- <code>code .</code>: open in vscode?</strong></p>
+<ul>
 <li>What are some of the major differences?</li>
 </ul>
-</blockquote>
+<p><strong>From research, I have concluded that the only major difference (that I hadn't noticed before), is that forward slash is used in Windows and backslash is used in MacOS. For instance:</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cd</span> \<span class="n">mnt</span>\<span class="n">c</span>\<span class="n">Users</span>\<span class="n">tmani</span> <span class="c1"># MacOS</span>
+
+<span class="n">cd</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">tmani</span> <span class="c1"># Windows</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Provide what you observed, struggled with, or leaned while playing with this code.</p>
 <ul>
 <li>Why is path a big deal when working with images?</li>
+</ul>
+<p><strong>Because it specifies the exact location of the image within the file system, allowing the software to locate, modify, and organize images correctly.</strong></p>
+<ul>
 <li>How does the meta data source and label relate to Unit 5 topics?</li>
+</ul>
+<p><strong>In the context of safe computing, metadata and labels can play a significant role in protecting individuals and organizations from potential risks. For example, metadata can reveal sensitive information about an individual, such as their location, which can be used by malicious actors to track or target them. Therefore, it is important to consider what information is included in the metadata of images and other files and to remove any sensitive information that is not necessary.</strong></p>
+<ul>
 <li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?</li>
 </ul>
 
