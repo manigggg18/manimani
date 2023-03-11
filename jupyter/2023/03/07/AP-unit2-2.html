@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      22 min read
     
 </span></p>
 
@@ -146,6 +146,7 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#IPython">IPython </a></li>
 <li class="toc-entry toc-h3"><a href="#pathlib">pathlib </a></li>
+<li class="toc-entry toc-h3"><a href="#Notes-and-Observations-#1">Notes and Observations #1 </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Reading-and-Encoding-Images-(2-implementations-follow)">Reading and Encoding Images (2 implementations follow) </a>
@@ -159,6 +160,21 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Data-Structures,-Imperative-Programming-Style,-and-working-with-Images">Data Structures, Imperative Programming Style, and working with Images </a></li>
 <li class="toc-entry toc-h2"><a href="#Data-Structures-and-OOP">Data Structures and OOP </a></li>
 <li class="toc-entry toc-h2"><a href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-...">Additionally, review all the imports in these three demos.  Create a definition of their purpose, specifically these ... </a></li>
+<li class="toc-entry toc-h2"><a href="#CB-2.2">CB 2.2 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Binary-Numbers-Quiz">Binary Numbers Quiz </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Adding-numbers-in-4-bit-representation">Adding numbers in 4-bit representation </a></li>
+<li class="toc-entry toc-h4"><a href="#Data-that-can-be-represented-with-binary-sequences">Data that can be represented with binary sequences </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#Data-Compression">Data Compression </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Compression-algorithm-for-storing-a-data-file">Compression algorithm for storing a data file </a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
 </ul><!--
 #################################################
@@ -351,6 +367,66 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Notes-and-Observations-#1">
+<a class="anchor" href="#Notes-and-Observations-#1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes and Observations #1<a class="anchor-link" href="#Notes-and-Observations-#1"> </a>
+</h3>
+<ul>
+<li>
+<p><strong>Defined functions: image_data() and image_display()</strong></p>
+</li>
+<li>
+<p><strong>image_data():</strong></p>
+<ul>
+<li>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li>
+<p><strong>path: default value is "images/"</strong></p>
+</li>
+<li>
+<p><strong>images: default value is a list of dictionaries, with each dictionary containing information about an image such as its source, label, and file name.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Checks if images is None. If so, it sets it to a list of two dictionaries, each containing information about an image.</strong></p>
+</li>
+<li>
+<p><strong>For each dictionary in images, it adds a new key-value pair filename which is the concatenation of the path argument and the file value of the dictionary.</strong></p>
+</li>
+<li>
+<p><strong>It returns the list of dictionaries with the updated filename values.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>The image_display():</strong></p>
+<ul>
+<li><strong>Takes in a list of dictionaries containing information about images in the same format as the output of image_data() function and uses the display() function from the IPython.display module to display each image using its filename value.</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>The if <code>__name__ == "__main__"</code> block of code calls image_data() function twice:</strong></p>
+<ul>
+<li>
+<p><strong>With a single image specified</strong></p>
+</li>
+<li>
+<p><strong>Without any arguments.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Then calls image_display() function with the output of image_data() in each case to display the corresponding images.</strong></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Reading-and-Encoding-Images-(2-implementations-follow)">
 <a class="anchor" href="#Reading-and-Encoding-Images-(2-implementations-follow)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reading and Encoding Images (2 implementations follow)<a class="anchor-link" href="#Reading-and-Encoding-Images-(2-implementations-follow)"> </a>
 </h2>
@@ -413,14 +489,24 @@ window.onload = wrap_img;
 <li>Does this code seem like a series of steps are being performed?</li>
 </ul>
 </blockquote>
-<p><strong>Yes.</strong></p>
+<p><strong>It looks like a number of models and procedures are defined and the procedures are executed using "if" statements and "for" loops.</strong></p>
 <ul>
 <li>Describe Grey Scale algorithm in English or Pseudo code?</li>
 </ul>
+<p><strong>Get the pixel data from the image using the "getdata()" method.</strong></p>
+<p><strong>For each pixel, compute the average value of the red, green, and blue components of the pixel.</strong></p>
+<p><strong>If the pixel has an alpha component, create a new tuple with the average value repeated three times and the original alpha value.</strong></p>
+<p><strong>If the pixel does not have an alpha component, create a new tuple with the average value repeated three times.</strong></p>
+<p><strong>Replace the pixel data in the original image with the grayscale pixel data.</strong></p>
+<p><strong>Generate HTML code to display the grayscale image using the "image_to_base64" function.</strong></p>
 <ul>
 <li>Describe scale image?  What is before and after on pixels in three images?</li>
+</ul>
+<p><strong>Scale image resizes an image to a specific width of 320 pixels while maintaining its aspect ratio. It does this by calculating the percentage scale that needs to be applied to the image's original height based on the ratio of the original width to the target width. Then it creates the new width and the scaled height and resizes the image using the resize() method from the PIL library. Before the function is applied, the images are opened and their metadata is stored, and after the function is applied, the images are encoded in base64 format and displayed in the Jupyter Notebook.</strong></p>
+<ul>
 <li>Is scale image a type of compression?  If so, line it up with College Board terms described?</li>
 </ul>
+<p><strong>No, this is not a type of compression, because the scaling function is a type of image resizing or scaling that does not involve any loss of information or reduction in the amount of data. Compression, on the other hand, involves reducing the amount of data in an image by removing some of the information, which may result in a loss of quality or detail.</strong></p>
 
 </div>
 </div>
@@ -530,85 +616,85 @@ window.onload = wrap_img;
         <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html_grey'</span><span class="p">]))</span> 
     <span class="nb">print</span><span class="p">()</span>
     
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">display</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>  
-<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span> <span class="k">as</span> <span class="n">pilImage</span> 
-<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
-<span class="kn">import</span> <span class="nn">base64</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="c1"># from IPython.display import HTML, display</span>
+<span class="c1"># from pathlib import Path  </span>
+<span class="c1"># from PIL import Image as pilImage </span>
+<span class="c1"># from io import BytesIO</span>
+<span class="c1"># import base64</span>
+<span class="c1"># import numpy as np</span>
 
-<span class="k">def</span> <span class="nf">image_data</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">"images/"</span><span class="p">),</span> <span class="n">images</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>  
-    <span class="k">if</span> <span class="n">images</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  
-        <span class="n">images</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Internet"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Green Square"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"green-square-16.png"</span><span class="p">},</span>
-            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Peter Carolin"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Clouds Impression"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"clouds-impression.png"</span><span class="p">},</span>
-            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Peter Carolin"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Lassen Volcano"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"lassen-volcano.jpg"</span><span class="p">}</span>
-        <span class="p">]</span>
-    <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
-        <span class="n">image</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">]</span> <span class="o">=</span> <span class="n">path</span> <span class="o">/</span> <span class="n">image</span><span class="p">[</span><span class="s1">'file'</span><span class="p">]</span> 
-    <span class="k">return</span> <span class="n">images</span>
+<span class="c1"># def image_data(path=Path("images/"), images=None):  </span>
+<span class="c1">#     if images is None:  </span>
+<span class="c1">#         images = [</span>
+<span class="c1">#             {'source': "Internet", 'label': "Green Square", 'file': "green-square-16.png"},</span>
+<span class="c1">#             {'source': "Peter Carolin", 'label': "Clouds Impression", 'file': "clouds-impression.png"},</span>
+<span class="c1">#             {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano.jpg"}</span>
+<span class="c1">#         ]</span>
+<span class="c1">#     for image in images:</span>
+<span class="c1">#         image['filename'] = path / image['file'] </span>
+<span class="c1">#     return images</span>
 
-<span class="k">def</span> <span class="nf">scale_image</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
-    <span class="n">baseWidth</span> <span class="o">=</span> <span class="mi">320</span>
-    <span class="n">scalePercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">baseWidth</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-    <span class="n">scaleHeight</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="nb">float</span><span class="p">(</span><span class="n">scalePercent</span><span class="p">)))</span>
-    <span class="n">scale</span> <span class="o">=</span> <span class="p">(</span><span class="n">baseWidth</span><span class="p">,</span> <span class="n">scaleHeight</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">img</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">scale</span><span class="p">)</span>
+<span class="c1"># def scale_image(img):</span>
+<span class="c1">#     baseWidth = 320</span>
+<span class="c1">#     scalePercent = (baseWidth/float(img.size[0]))</span>
+<span class="c1">#     scaleHeight = int((float(img.size[1])*float(scalePercent)))</span>
+<span class="c1">#     scale = (baseWidth, scaleHeight)</span>
+<span class="c1">#     return img.resize(scale)</span>
 
-<span class="k">def</span> <span class="nf">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="nb">format</span><span class="p">):</span>
-    <span class="k">with</span> <span class="n">BytesIO</span><span class="p">()</span> <span class="k">as</span> <span class="n">buffer</span><span class="p">:</span>
-        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="nb">format</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">buffer</span><span class="o">.</span><span class="n">getvalue</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<span class="c1"># def image_to_base64(img, format):</span>
+<span class="c1">#     with BytesIO() as buffer:</span>
+<span class="c1">#         img.save(buffer, format)</span>
+<span class="c1">#         return base64.b64encode(buffer.getvalue()).decode()</span>
 
-<span class="k">def</span> <span class="nf">image_management</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>          
-    <span class="n">img</span> <span class="o">=</span> <span class="n">pilImage</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">])</span>
+<span class="c1"># def image_management(image):          </span>
+<span class="c1">#     img = pilImage.open(image['filename'])</span>
     
-    <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">format</span>
-    <span class="n">image</span><span class="p">[</span><span class="s1">'mode'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">mode</span>
-    <span class="n">image</span><span class="p">[</span><span class="s1">'size'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="n">scale_image</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-    <span class="n">image</span><span class="p">[</span><span class="s1">'pil'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span>
-    <span class="n">image</span><span class="p">[</span><span class="s1">'scaled_size'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
-    <span class="n">image</span><span class="p">[</span><span class="s1">'html'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'&lt;img src="data:image/png;base64,</span><span class="si">%s</span><span class="s1">"&gt;'</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'pil'</span><span class="p">],</span> <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">])</span>
+<span class="c1">#     image['format'] = img.format</span>
+<span class="c1">#     image['mode'] = img.mode</span>
+<span class="c1">#     image['size'] = img.size</span>
+<span class="c1">#     img = scale_image(img)</span>
+<span class="c1">#     image['pil'] = img</span>
+<span class="c1">#     image['scaled_size'] = img.size</span>
+<span class="c1">#     image['html'] = '&lt;img src="data:image/png;base64,%s"&gt;' % image_to_base64(image['pil'], image['format'])</span>
     
-<span class="k">def</span> <span class="nf">image_management_add_html_grey</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="s1">'pil'</span><span class="p">]</span>
-    <span class="nb">format</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">]</span>
+<span class="c1"># def image_management_add_html_grey(image):</span>
+<span class="c1">#     img = image['pil']</span>
+<span class="c1">#     format = image['format']</span>
     
-    <span class="n">img_data</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getdata</span><span class="p">()</span> 
-    <span class="n">image</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img_data</span><span class="p">)</span>
-    <span class="n">image</span><span class="p">[</span><span class="s1">'gray_data'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1">#     img_data = img.getdata() </span>
+<span class="c1">#     image['data'] = np.array(img_data)</span>
+<span class="c1">#     image['gray_data'] = []</span>
 
-    <span class="k">for</span> <span class="n">pixel</span> <span class="ow">in</span> <span class="n">image</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]:</span>
-        <span class="n">average</span> <span class="o">=</span> <span class="p">(</span><span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">//</span> <span class="mi">3</span>  
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
-            <span class="n">image</span><span class="p">[</span><span class="s1">'gray_data'</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span> 
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">image</span><span class="p">[</span><span class="s1">'gray_data'</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">))</span>
+<span class="c1">#     for pixel in image['data']:</span>
+<span class="c1">#         average = (pixel[0] + pixel[1] + pixel[2]) // 3  </span>
+<span class="c1">#         if len(pixel) &gt; 3:</span>
+<span class="c1">#             image['gray_data'].append((average, average, average, pixel[3])) </span>
+<span class="c1">#         else:</span>
+<span class="c1">#             image['gray_data'].append((average, average, average))</span>
         
-    <span class="n">img</span><span class="o">.</span><span class="n">putdata</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'gray_data'</span><span class="p">])</span>
-    <span class="n">image</span><span class="p">[</span><span class="s1">'html_grey'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'&lt;img src="data:image/png;base64,</span><span class="si">%s</span><span class="s1">"&gt;'</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="nb">format</span><span class="p">)</span>
+<span class="c1">#     img.putdata(image['gray_data'])</span>
+<span class="c1">#     image['html_grey'] = '&lt;img src="data:image/png;base64,%s"&gt;' % image_to_base64(img, format)</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-    <span class="n">images</span> <span class="o">=</span> <span class="n">image_data</span><span class="p">()</span>
+<span class="c1"># if __name__ == "__main__":</span>
+<span class="c1">#     images = image_data()</span>
     
-    <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
-        <span class="n">image_management</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"---- meta data -----"</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'label'</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'source'</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'mode'</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Original size: "</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">'size'</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Scaled size: "</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">'scaled_size'</span><span class="p">])</span>
+<span class="c1">#     for image in images:</span>
+<span class="c1">#         image_management(image)</span>
+<span class="c1">#         print("---- meta data -----")</span>
+<span class="c1">#         print(image['label'])</span>
+<span class="c1">#         print(image['source'])</span>
+<span class="c1">#         print(image['format'])</span>
+<span class="c1">#         print(image['mode'])</span>
+<span class="c1">#         print("Original size: ", image['size'])</span>
+<span class="c1">#         print("Scaled size: ", image['scaled_size'])</span>
         
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"-- original image --"</span><span class="p">)</span>
-        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html'</span><span class="p">]))</span> 
+<span class="c1">#         print("-- original image --")</span>
+<span class="c1">#         display(HTML(image['html'])) </span>
         
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"--- grey image ----"</span><span class="p">)</span>
-        <span class="n">image_management_add_html_grey</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
-        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html_grey'</span><span class="p">]))</span> 
-    <span class="nb">print</span><span class="p">()</span>
+<span class="c1">#         print("--- grey image ----")</span>
+<span class="c1">#         image_management_add_html_grey(image)</span>
+<span class="c1">#         display(HTML(image['html_grey'])) </span>
+<span class="c1">#     print()</span>
 </pre></div>
 
     </div>
@@ -806,6 +892,54 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="CB-2.2">
+<a class="anchor" href="#CB-2.2" aria-hidden="true"><span class="octicon octicon-link"></span></a>CB 2.2<a class="anchor-link" href="#CB-2.2"> </a>
+</h2>
+<p><img src="https://github.com/manigggg18/manimani/blob/master/images/sc.png?raw=true" alt="sml"></p>
+<p>The Binary Numbers and Data Compression quizzes were relatively easy, and I was able to complete both quizzes with little to no difficulty. However, there were some questions that were trickier than others. There were also a lot of high-quality notes.</p>
+<h3 id="Binary-Numbers-Quiz">
+<a class="anchor" href="#Binary-Numbers-Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Numbers Quiz<a class="anchor-link" href="#Binary-Numbers-Quiz"> </a>
+</h3>
+<h4 id="Adding-numbers-in-4-bit-representation">
+<a class="anchor" href="#Adding-numbers-in-4-bit-representation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adding numbers in 4-bit representation<a class="anchor-link" href="#Adding-numbers-in-4-bit-representation"> </a>
+</h4>
+<p><strong>A certain programming language uses 4-bit binary sequences to represent nonnegative integers. For example, the binary sequence 0101 represents the corresponding decimal value 5. Using this programming language, a programmer attempts to add the decimal values 14 and 15 and assign the sum to the variable total. Which of the following best describes the result of this operation?</strong></p>
+<p>A: The correct sum of 29 will be assigned to the variable total.</p>
+<p>B: An overflow error will occur because 4 bits is not large enough to represent either of the values 14 or 15.</p>
+<p>C: An overflow error will occur because 4 bits is not large enough to represent 29, the sum of 14 and 15.</p>
+<p>D: A round-off error will occur because the decimal values 14 and 15 are represented as approximations due to the fixed number of bits used to represent numbers.</p>
+<p><strong>Answer:</strong> An overflow error will occur because 4 bits is not large enough to represent 29, the sum of 14 and 15. The largest binary value that can be represented using 4 bits is 1111, which is equal to the decimal value 15. Since the sum is larger than the largest representable value, an overflow error will occur.</p>
+<h4 id="Data-that-can-be-represented-with-binary-sequences">
+<a class="anchor" href="#Data-that-can-be-represented-with-binary-sequences" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data that can be represented with binary sequences<a class="anchor-link" href="#Data-that-can-be-represented-with-binary-sequences"> </a>
+</h4>
+<p><strong>Which of the following are true statements about the data that can be represented using binary sequences?</strong></p>
+<p><strong>I. Binary sequences can be used to represent strings of characters.</strong></p>
+<p><strong>II. Binary sequences can be used to represent colors.</strong></p>
+<p><strong>III. Binary sequences can be used to represent audio recordings.</strong></p>
+<p>A: I only</p>
+<p>B: I and II only</p>
+<p>C: II and III only</p>
+<p>D: I, II, and III</p>
+<p><strong>Answer:</strong> I, II, and III. All digital data is represented at the lowest level as sequences of bits. Statement I is true because strings of characters can be represented by sequences of bits. Statement II is true because colors can be encoded as sequences of bits. Statement III is true because sequences of bits can be used to represent sound.</p>
+<h3 id="Data-Compression">
+<a class="anchor" href="#Data-Compression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Compression<a class="anchor-link" href="#Data-Compression"> </a>
+</h3>
+<h4 id="Compression-algorithm-for-storing-a-data-file">
+<a class="anchor" href="#Compression-algorithm-for-storing-a-data-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compression algorithm for storing a data file<a class="anchor-link" href="#Compression-algorithm-for-storing-a-data-file"> </a>
+</h4>
+<p><strong>A user wants to save a data file on an online storage site. The user wants to reduce the size of the file, if possible, and wants to be able to completely restore the file to its original version. Which of the following actions best supports the user’s needs?</strong></p>
+<p>A: Compressing the file using a lossless compression algorithm before uploading it</p>
+<p>B: Compressing the file using a lossy compression algorithm before uploading it</p>
+<p>C: Compressing the file using both lossy and lossless compression algorithms before uploading it</p>
+<p>D: Uploading the original file without using any compression algorithm</p>
+<p><strong>Answer:</strong> Compressing the file using a lossless compression algorithm before uploading it. Lossless compression algorithms allow for complete reconstruction of the original data and typically reduce the size of the data.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
