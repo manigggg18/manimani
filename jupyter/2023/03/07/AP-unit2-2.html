@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      22 min read
+      25 min read
     
 </span></p>
 
@@ -146,9 +146,9 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#IPython">IPython </a></li>
 <li class="toc-entry toc-h3"><a href="#pathlib">pathlib </a></li>
-<li class="toc-entry toc-h3"><a href="#Notes-and-Observations-#1">Notes and Observations #1 </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#Notes-and-Observations-#1">Notes and Observations #1 </a></li>
 <li class="toc-entry toc-h2"><a href="#Reading-and-Encoding-Images-(2-implementations-follow)">Reading and Encoding Images (2 implementations follow) </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#PIL-(Python-Image-Library)">PIL (Python Image Library) </a></li>
@@ -158,8 +158,10 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Data-Structures,-Imperative-Programming-Style,-and-working-with-Images">Data Structures, Imperative Programming Style, and working with Images </a></li>
+<li class="toc-entry toc-h2"><a href="#Notes-and-Observations-#2">Notes and Observations #2 </a></li>
 <li class="toc-entry toc-h2"><a href="#Data-Structures-and-OOP">Data Structures and OOP </a></li>
 <li class="toc-entry toc-h2"><a href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-...">Additionally, review all the imports in these three demos.  Create a definition of their purpose, specifically these ... </a></li>
+<li class="toc-entry toc-h2"><a href="#Notes-and-Observations-#3">Notes and Observations #3 </a></li>
 <li class="toc-entry toc-h2"><a href="#CB-2.2">CB 2.2 </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Binary-Numbers-Quiz">Binary Numbers Quiz </a>
@@ -368,9 +370,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Notes-and-Observations-#1">
+<h2 id="Notes-and-Observations-#1">
 <a class="anchor" href="#Notes-and-Observations-#1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes and Observations #1<a class="anchor-link" href="#Notes-and-Observations-#1"> </a>
-</h3>
+</h2>
 <ul>
 <li>
 <p><strong>Defined functions: image_data() and image_display()</strong></p>
@@ -708,6 +710,112 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes-and-Observations-#2">
+<a class="anchor" href="#Notes-and-Observations-#2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes and Observations #2<a class="anchor-link" href="#Notes-and-Observations-#2"> </a>
+</h2>
+<ul>
+<li>
+<p>Main functions:</p>
+<ul>
+<li>
+<p>image_data(path=Path("images/"), images=None):</p>
+<ul>
+<li>
+<p>Takes a path argument to specify the directory where the image files are located, and an images argument to specify a list of dictionaries that describe the image files.</p>
+</li>
+<li>
+<p>If images is not specified, will use a default list of image descriptions.</p>
+</li>
+<li>
+<p>Returns a list of image dictionaries with additional filename properties that specify the full path to the image files.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>scale_image(img):</p>
+<ul>
+<li>
+<p>Takes an image file img</p>
+</li>
+<li>
+<p>Resizes it to a fixed width of 320 pixels, while maintaining the aspect ratio.</p>
+</li>
+<li>
+<p>Returns the resized image.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>image_to_base64(img, format):</p>
+<ul>
+<li>
+<p>Takes an image file img and a format string.</p>
+</li>
+<li>
+<p>Converts the image file to a base64-encoded string that can be embedded in HTML code.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>image_management(image):</p>
+<ul>
+<li>
+<p>Takes an image dictionary image and performs several operations on the image file specified by the filename property.</p>
+</li>
+<li>
+<p>Reads the image file using the pilImage.open() function, extracts some metadata (format, mode, size), scales the image using the scale_image() function, and generates a base64-encoded HTML code to display the scaled image using the image_to_base64() function.</p>
+</li>
+<li>
+<p>Adds the following properties to the image dictionary: format, mode, size, pil (the scaled image), scaled_size, and html (the HTML code to display the scaled image).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>image_management_add_html_grey(image):</p>
+<ul>
+<li>
+<p>Takes an image dictionary image that has already been processed by the image_management() function and generates a base64-encoded HTML code to display a grayscale version of the image.</p>
+</li>
+<li>
+<p>Extracts the pixel data from the pil property of the image dictionary, converts each pixel to grayscale, and generates a new list of pixel data in the gray_data property of the image dictionary.</p>
+</li>
+<li>
+<p>Creates a new pilImage object with the grayscale pixel data, and generates a base64-encoded HTML code to display the grayscale image using the image_to_base64() function.</p>
+</li>
+<li>
+<p>Adds the gray_data and html_grey properties to the image dictionary.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>if __name__ == "__main__"</code>:</p>
+<ul>
+<li>
+<p>Uses the above functions to:</p>
+<ul>
+<li>
+<p>Process a list of image files</p>
+</li>
+<li>
+<p>Print some metadata about the images</p>
+</li>
+<li>
+<p>Display the original and grayscale versions of the images in the Jupyter Notebook or web page using the display() and HTML() functions from the IPython.display module.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Data-Structures-and-OOP">
 <a class="anchor" href="#Data-Structures-and-OOP" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Structures and OOP<a class="anchor-link" href="#Data-Structures-and-OOP"> </a>
 </h2>
@@ -893,6 +1001,96 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes-and-Observations-#3">
+<a class="anchor" href="#Notes-and-Observations-#3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes and Observations #3<a class="anchor-link" href="#Notes-and-Observations-#3"> </a>
+</h2>
+<ul>
+<li>
+<p>Defines a class called Image_Data:</p>
+<ul>
+<li>
+<p>Represents an image object with various properties and methods.</p>
+</li>
+<li>
+<p>Uses several external libraries, including IPython.display, pathlib, PIL, io, and numpy.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The Image_Data class has several properties:</p>
+<ul>
+<li>
+<p>Source, label, file, filename, img, format, mode, originalSize, size, html, and html_grey.</p>
+<ul>
+<li>They represent various attributes of the image, such as the image source, label, file name, format, size, and HTML representation.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Methods:</p>
+<ul>
+<li>
+<p><code>__init__</code>, scale_image, image_to_html, and image_to_html_grey:</p>
+<ul>
+<li>
+<p><code>__init__</code>:</p>
+<ul>
+<li>
+<p>Initializes the image object with the given parameters, including the source, label, file name, path, and base width.</p>
+</li>
+<li>
+<p>Loads the image from the file and sets various properties of the image object.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>scale_image:</p>
+<ul>
+<li>Scales the image to the specified base width while maintaining its aspect ratio. </li>
+</ul>
+</li>
+<li>
+<p>image_to_html:</p>
+<ul>
+<li>Converts the image to an HTML representation that can be displayed in a web page. </li>
+</ul>
+</li>
+<li>
+<p>image_to_html_grey:</p>
+<ul>
+<li>Converts the image to grayscale and returns its HTML representation.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>image_data function:</p>
+<ul>
+<li>
+<p>Defines a list of image objects with their source, label, and file name.</p>
+</li>
+<li>
+<p>Creates a list of Image_Data objects using the image data defined in image_data.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>__main__</code>:</p>
+<ul>
+<li>Displays the meta data, scaled image, and grayscale image of each image object using the display and HTML functions.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
