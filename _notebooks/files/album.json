@@ -1,0 +1,35 @@
+{
+    "Album ID":{
+      "Psyence-fiction":1,
+      "Kid A":2,
+      "It's Always Blue":3,
+      "Trench":4,
+      "Dummy":5,
+      "Amok":6,
+      "In Rainbows":7,
+      "Synchronicity":8,
+      "Amnesiac":9
+    },
+    "Creator":{
+      "Psyence-fiction":"UNKLE",
+      "Kid A":"Radiohead",
+      "It's Always Blue":"Noah Hawley, Jeff Russo",
+      "Trench":"21 Pilots",
+      "Dummy":"Portishead",
+      "Amok":"Atoms for Peace",
+      "In Rainbows":"Radiohead",
+      "Synchronicity":"The Police",
+      "Amnesiac":"Radiohead"
+    },
+    "Year":{
+      "Psyence-fiction":1998,
+      "Kid A":2000,
+      "It's Always Blue":2018,
+      "Trench":2018,
+      "Dummy":1994,
+      "Amok":2013,
+      "In Rainbows":2007,
+      "Synchronicity":1983,
+      "Amnesiac":2000
+    }
+}
