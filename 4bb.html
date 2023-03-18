@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      12 min read
     
 </span></p>
 
@@ -299,9 +299,11 @@ window.onload = wrap_img;
 <ul>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
 </ul>
+<p><strong>The conn object is an instance of the sqlite3.Connection class and represents a connection to an SQLite database. It has attributes like autocommit, in_transaction, isolation_level, row_factory, text_factory, and total_changes. The cursor object is an instance of the sqlite3.Cursor class, which is used to execute SQL statements and interact with the database. It has attributes like arraysize, connection, description, lastrowid, rowcount, and statement. In the given code, the cursor object is used to execute the SQL query "SELECT * FROM users" and retrieve all rows using the fetchall() method. It then checks if the result set is empty and prints each row if not. Finally, it closes the cursor and conn objects using the close() method.</strong></p>
 <ul>
 <li>Is "results" an object?  How do you know?</li>
 </ul>
+<p><strong>Results is an object. It is a list of tuples containing the rows returned by the SQL query executed using the cursor object. The fetchall() method returns a list of tuples, where each tuple represents a row in the result set. Each tuple contains values for each column in the table. In the code segment, results is assigned the value returned by the fetchall() method called on the cursor object after executing the SQL statement "SELECT * FROM users". The if statement checks if the length of results is 0, indicating an empty table, or if there are rows in the table, in which case each row is printed using a for loop.</strong></p>
 
 </div>
 </div>
@@ -355,10 +357,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations? Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
 </ul>
 </blockquote>
+<p><strong>The purpose of the SQL INSERT statement is to add a new row to the users table in the SQLite database, with values provided by the user. The INSERT statement is used to specify the values to be inserted into each column of the table.The statement INSERT INTO users (_name, _uid, _password, _dob) VALUES (?, ?, ?, ?) is a parameterized SQL statement that specifies the column names and the values to be inserted. The ? placeholders are used to specify the values to be inserted, which are provided as a tuple in the execute() method call.The INSERT statement is not the same as the <strong>init</strong> method used in classes to initialize object attributes. The <strong>init</strong> method is called when an object is created, whereas the INSERT statement is executed on the database to add a new row. In this code segment, the create function prompts the user to input values for the name, uid, password, and dob attributes of the new user record. The INSERT statement is then executed using these values, and if the operation is successful, a message is printed to indicate that a new user record has been created. If an error occurs while executing the INSERT statement, an error message is printed instead.</strong></p>
 
 </div>
 </div>
@@ -424,6 +426,7 @@ window.onload = wrap_img;
 <li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
+<p><strong>The hacked part in the update() function is a simple check for the length of the user-provided password. If the password is less than 2 characters long, the message variable is set to "hacked", and a default password "gothackednewpassword123" is used instead of the user-provided password. This is an example of a simple data validation technique to prevent weak passwords. The try/except block is used to handle any errors that occur while executing the SQL UPDATE statement. If an error occurs, the except block is executed, which prints an error message along with the details of the error. The try/except block is used here to catch any potential errors that might occur when executing the UPDATE statement, such as an invalid SQL syntax, a database connection error, or a constraint violation. The except block would occur when an error is encountered during the execution of the UPDATE statement. This might be due to various reasons such as an incorrect SQL syntax, a database connection error, a violation of a database constraint, or an invalid value being passed to the execute() method. The code that is repeated in each example is the connection and cursor initialization for interacting with the database. This is repeated to ensure that a new connection and cursor object are created for each database operation. It is important to close the connection and cursor objects properly after use to avoid resource leaks and improve performance.</strong></p>
 
 </div>
 </div>
@@ -488,10 +491,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why? In the print statemements, what is the "f" and what does {uid} do?</li>
 </ul>
 </blockquote>
+<p><strong>The DELETE operation can be considered dangerous if used without proper caution since it permanently removes data from the database. It is a powerful command that can delete data from the database in one shot, and if not used carefully, can result in the loss of valuable information. The "f" in the print statement stands for "formatted string literal" and is a way to embed expressions inside string literals. The {uid} inside the string is a placeholder that gets replaced with the value of the uid variable at runtime. This technique is used to create dynamic strings that can contain variable values, making the output more readable and informative. In this case, the {uid} placeholder is used to print the user ID value that was used for the DELETE operation.</strong></p>
 
 </div>
 </div>
@@ -549,10 +552,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat? Could you refactor this menu?  Make it work with a List?</li>
 </ul>
 </blockquote>
+<p><strong>The menu repeats because it is implemented recursively, i.e., the function calls itself again after each operation is performed. This causes the menu to be displayed again and again until the user chooses to exit. To refactor the menu, we can use a list to store the available operations and their corresponding functions. This way, we can avoid repetitive code and make the menu more scalable, in case we want to add more operations in the future.</strong></p>
 
 </div>
 </div>
