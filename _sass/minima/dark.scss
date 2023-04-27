@@ -62,6 +62,7 @@ pre, code {
 }
 
 table th{
+    align-items: center;
     background-color: $overlay;
     border-color: $overlay-light;
     color: $high-emph;
@@ -90,4 +91,170 @@ canvas {
 
 li .post-meta-description {
     color: $med-emph !important;
+}
+
+#greet-text, .play-container, .greet-container {
+  text-align: center;
+}
+
+// <------------------------------------- SASS hacks start here ------------------------------------------>
+
+// variable
+$button-size: 50px;
+
+// mixin
+@mixin button-style {
+  display: block;
+  margin: auto;
+  align-items: center;
+  font-family: 'Fira Mono', monospace;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  max-width: 50%;
+  max-height: $button-size !important;
+  cursor: pointer;
+  border-radius: 0.75em;
+  box-shadow: 0 0 0.5em #175178;
+  margin-bottom: 20px;
+}
+
+// mixin applications
+#play-button {
+  @include button-style;
+}
+#close-game {
+  @include button-style;
+  display: none;
+}
+
+.bar-1 {
+  width: 90px;
+  height: 60px;
+  border-radius: 40px;
+  color: #000000;
+  border: #ffffff;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+//mixin
+@mixin timer-style {
+  border-radius: 6px;
+}
+
+// nesting
+.timer {
+  width: 200px;
+  border: solid 1px #ffffff;
+  margin-left: 20px;
+  margin-top: -30px;
+
+  @include timer-style;
+
+  .inner {
+    height: 15px;
+    animation: timer-start 40s linear forwards paused 1;
+    @include timer-style;
+  }
+}
+
+@keyframes timer-start {
+  0% {
+    width: 100%;
+    background: #1aff00;
+  }
+
+  100% {
+    width: 0%;
+    background: #F00;
+  }
+}
+
+#game-container {
+  background-color: #8249c9;
+  position: relative;
+  text-align: center;
+  width: 480px;
+  height: 550px;
+  border-radius: 20px;
+  margin: auto;
+  display: none;
+}
+#game {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 450px;
+  height: 450px;
+}
+#canvas {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  margin: 21px;
+}
+
+// nesting
+.flip-card {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  margin-top: 0px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    border-radius: 20px;
+  }
+
+  .flip-card-back {
+    width: 100px;
+    height: 100px;
+    background-color: #f1dd00;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+  }
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+}
+
+#crds {
+  width: 50px;
+  height: 50px;
+}
+
+.frozen {
+  pointer-events: none;
+  opacity: 1;
+  display: block;
+}
+
+#popup-image {
+  position: absolute;
+  display: none;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
 }
