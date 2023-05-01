@@ -17,21 +17,21 @@ week: 29
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+- Processor GHz: **AMD Ryzen 7 5700U with Radeon Graphics            1.80 GHz**
+- Memory in GB: **12 GB**
+- Storage in GB: **474 GB**
+- OS: **Windows 11 Home**
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
+- Input devices: **Interactive elements used by the user. EX: keyboard, mouse, touchpad**
+- Output devices: **Elements of a computer that respond based on or to the user input. EX: headphones, speaker, monitor**
+- Program File: **Files that are executed by computers in order to run a program. EX: web applications.**
+- Program Code: **Instructions given to a machine to create a computer program. EX: web application code.**
+- Processes: **Instance of a program running in a computer. EX: searching, debugging, etc**
+- Ports: **Virtual point where network connections start and end.**
+- Data File: **File that stores data to be used by an application or system. It contains actual data, or a view of the data. It also allows us to store information permanently and to access later on and alter that information whenever necessary.**
+- Inspect Running Code: **Method of debugging a program code while it is running to check all functionalities.**
+- Inspect Variables: **A subcategory of inspecting running code which allows the user to inspect variables in the program code in real time.**
 
 
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
@@ -51,16 +51,30 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path: **A**
+    - Route: **E**
+    - Computer System: **B**
+    - Computer Device: **C**
+    - Bandwidth: **D**
+    - Computer Network: **F**
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+
+**T**
+
+**F**
+
+**F**
+
+**T**
+
+**F**
+
+**F**
+
+**T**
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -79,6 +93,8 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - The world wide web uses the internet
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
+
+![Computer Hardware]({{site.baseurl}}/images/inf.png)
 
 ![Full Stack]({{site.baseurl}}/images/fullstack.png)
 
@@ -114,14 +130,18 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+**Fault tolerance is the internet's ability to function properly even when there is failure in hardware or software. This is achieved through redundancy and other error-solving methods that allow the system to identify and correct errors, ensuring that the performance is impacted minimally.**
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
 - What is naturally Distributed in Frontend/Backend archeticture?  
 
+**The frontend/backend architecture is a distributed system where the frontend and backend components are naturally separated. The frontend handles the user interface and is distributed across multiple clients, while the backend handles business logic and data storage and is deployed on servers or cloud platforms. The distributed nature of the architecture provides scalability, fault tolerance, and performance optimization by adding more clients or instances for the frontend, more servers or services for the backend, replicating the backend, or load balancing. It is a popular and effective way of building modern web applications capable of handling large volumes of users and data.**
+
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 
+**The `--workers` option in the `GUNICORN_CMD_ARGS` environment variable specifies the number of worker processes that `Gunicorn` should spawn to handle incoming requests. `Gunicorn` uses a single worker `process`, which can handle only one request at a time. By increasing the number of worker processes, `Gunicorn` can handle multiple requests simultaneously, which can improve the overall performance of the server.**
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
 - Review this [article](https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray)...  Can you get parallel code on images to work more effectively?  I have not tried Ray.
