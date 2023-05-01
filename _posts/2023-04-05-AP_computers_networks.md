@@ -34,6 +34,9 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Inspect Variables: **A subcategory of inspecting running code which allows the user to inspect variables in the program code in real time.**
 
 
+![fuck]({{site.baseurl}}/images/inf2.png)
+
+
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
 
 
