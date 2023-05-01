@@ -98,7 +98,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      34 min read
+      35 min read
     
 </span></p>
 
@@ -708,7 +708,7 @@ Created new uid bobruth
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">initEasyImages</span><span class="p">():</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
         <span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span>
-        <span class="n">image_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span><span class="o">/</span><span class="s2">"images/easy"</span>
+        <span class="n">image_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span><span class="o">/</span><span class="s2">"images"</span>
         <span class="n">images_paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">image_dir</span><span class="o">.</span><span class="n">iterdir</span><span class="p">()]</span>
         <span class="n">images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Images</span><span class="p">(</span><span class="s2">"images/easy/"</span> <span class="o">+</span> <span class="n">image</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images_paths</span><span class="p">]</span>
         <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
@@ -731,40 +731,26 @@ Created new uid bobruth
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;cell line: 15&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span>                  db.session.remove()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span>                  print("Error adding image: ", image.imagePath)
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> initEasyImages()
-
-<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb Cell 12</span> in <span class="ansi-cyan-fg">initEasyImages</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> db.create_all()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> image_dir = Path.cwd()/"images/easy"
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> images_paths = [i.name for i in image_dir.iterdir()]
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> images = [Images("images/easy/" + image, 250, 250, 0) for image in images_paths]
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> for image in images:
-
-<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;listcomp&gt;</span><span class="ansi-blue-fg">(.0)</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> db.create_all()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> image_dir = Path.cwd()/"images/easy"
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> images_paths = [i.name for i in image_dir.iterdir()]
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> images = [Images("images/easy/" + image, 250, 250, 0) for image in images_paths]
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/2023-04-27-lessonstudent.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> for image in images:
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span>, in <span class="ansi-cyan-fg">Path.iterdir</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1156</span> def iterdir(self):
-<span class="ansi-green-intense-fg ansi-bold">   1157</span>     """Iterate over the files in this directory.  Does not yield any
-<span class="ansi-green-intense-fg ansi-bold">   1158</span>     result for the special paths '.' and '..'.
-<span class="ansi-green-intense-fg ansi-bold">   1159</span>     """
-<span class="ansi-green-fg">-&gt; 1160</span>     for name in self._accessor.listdir(self):
-<span class="ansi-green-intense-fg ansi-bold">   1161</span>         if name in {'.', '..'}:
-<span class="ansi-green-intense-fg ansi-bold">   1162</span>             # Yielding a path object for these makes little sense
-<span class="ansi-green-intense-fg ansi-bold">   1163</span>             continue
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: '/mnt/c/Users/tmani/vscode/backup/manimani/_notebooks/images/easy'</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+Successfully added entry
+</pre>
 </div>
 </div>
 
@@ -834,7 +820,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 <blockquote>
 <p>Please write a few sentences answering the essential question, "What are some methods that we could store and access images in the backend, and how can we send them to a frontend application?"</p>
 </blockquote>
-<p>-</p>
+<p><strong>You can store images in a database, either as binary data or as a reference to the image file stored in a separate dictionary or pathway. This approach can make it easier to manage and query your images, but it may not be the most efficient way to store large image files. Once the images are stored, you can send them to a frontend application using an API endpoint that returns the image data in a specific format such as JSON. The frontend application can then make a request to this API endpoint to retrieve the image data</strong></p>
 
 </div>
 </div>
@@ -1219,9 +1205,16 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 <p>Please answer these questions to earn points for the popcorn hacks.</p>
 <ol>
 <li>What are the four HTTP request methods that are used with Flask?</li>
+</ol>
+<p><strong>GET, POST, PUT, DELETE</strong></p>
+<ol>
 <li>What is a parser and how would it be aid with data validation?</li>
+</ol>
+<p><strong>Parsers process input data to extract and organize the relevant information from the input. Parsers can be used to transform the input data into a structured format that can be easily processed by other programs. When it comes to data validation, a parser can be useful in ensuring that the input data conforms to a specific format or structure.</strong></p>
+<ol>
 <li>What is the role endpoints in Flask?</li>
 </ol>
+<p><strong>It is an identifier that is used in determining what logical unit of your code should handle the request. Normally, an endpoint is just the name of a view function.</strong></p>
 
 </div>
 </div>
@@ -1257,24 +1250,6 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [13]</span>
-<span class="ansi-red-fg">    // checks if site is run locally</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1357,24 +1332,6 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [14]</span>
-<span class="ansi-red-fg">    // fetches entire database</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1439,24 +1396,6 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [15]</span>
-<span class="ansi-red-fg">    // calls addData function</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1512,24 +1451,6 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [16]</span>
-<span class="ansi-red-fg">    // editing function defined</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1569,24 +1490,6 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [17]</span>
-<span class="ansi-red-fg">    // deleting function defined</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1633,24 +1536,6 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [18]</span>
-<span class="ansi-red-fg">    // GET method calling info from backend url</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1663,9 +1548,16 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/pathlib.py:1160</span
 <p>Please answer these questions to earn points for the popcorn hacks.</p>
 <ol>
 <li>How is data for images stored in a Flask API and how is it displayed on the frontend when requested?</li>
+</ol>
+<p><strong>They are stored as binary data in a database. When an image is requested, the API will retrieve the image from the database and send it as a response. To display the image on the frontend, HTML with the API endpoint is used.</strong></p>
+<ol>
 <li>What is the <code>fetch()</code> function and how is it used in frontend logic?</li>
+</ol>
+<p><strong>Built-in JavaScript method that allows you to make network requests to retrieve resources from a server.</strong></p>
+<ol>
 <li>How is data formatted and sent to the backend? (mention JSON in your answer)</li>
 </ol>
+<p><strong>Data is fetched from a RESTful API endpoint using the fetch() method, and then the response is converted to JSON format using the .json() method.</strong></p>
 
 </div>
 </div>
@@ -1775,7 +1667,7 @@ Our quickSort algorithm consists of 2 procedures, a <code>partition()</code> pro
 <a class="anchor" href="#Popcorn-Hack" aria-hidden="true"><span class="octicon octicon-link"></span></a>Popcorn Hack<a class="anchor-link" href="#Popcorn-Hack"> </a>
 </h3>
 <p>Please answer our EQ for this section: <strong>What is the quicksort algorithm, and how does it work? How does it's time and space complexities scale with input sizes?</strong></p>
-<p>-</p>
+<p><strong>Quicksort is a sorting algorithm that uses the divide-and-conquer approach. It works by selecting a pivot element from the array and partitioning the array around the pivot such that all elements smaller than the pivot come before it, and all larger elements come after it. The algorithm then recursively sorts the two partitions until the entire array is sorted. Quicksort has an average time complexity of O(nlogn) and a worst-case time complexity of O(n^2), with a space complexity of O(logn) on average and O(n) in the worst case.</strong></p>
 
 </div>
 </div>
@@ -1828,6 +1720,14 @@ Our quickSort algorithm consists of 2 procedures, a <code>partition()</code> pro
 <h1 id="HACKS-ARE-DUE-SATURDAY-(4/29)-11:59-PM">
 <a class="anchor" href="#HACKS-ARE-DUE-SATURDAY-(4/29)-11:59-PM" aria-hidden="true"><span class="octicon octicon-link"></span></a>HACKS ARE DUE SATURDAY (4/29) 11:59 PM<a class="anchor-link" href="#HACKS-ARE-DUE-SATURDAY-(4/29)-11:59-PM"> </a>
 </h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can just give me .1</p>
+
 </div>
 </div>
 </div>
