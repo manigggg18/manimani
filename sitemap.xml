@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://manigggg18.github.io/manimani/frontend/mario1</loc>
+<lastmod>2022-07-19T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://manigggg18.github.io/manimani/frontend/mario</loc>
+<lastmod>2022-07-19T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://manigggg18.github.io/manimani/jupyter/2022/08/21/firstnotebook.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
@@ -301,6 +309,14 @@
 <lastmod>2023-05-10T00:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>https://manigggg18.github.io/manimani/algorithm</loc>
+<lastmod>2023-05-15T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://manigggg18.github.io/manimani/itsa</loc>
+<lastmod>2023-05-16T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://manigggg18.github.io/manimani/404.html/</loc>
 </url>
 <url>
@@ -338,5 +354,8 @@
 </url>
 <url>
 <loc>https://manigggg18.github.io/manimani/page5/</loc>
+</url>
+<url>
+<loc>https://manigggg18.github.io/manimani/page6/</loc>
 </url>
 </urlset>
