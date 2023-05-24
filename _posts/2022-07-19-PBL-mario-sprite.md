@@ -12,11 +12,6 @@ tags: [javascript]
 <!-- Hack 2: make you own sprite display -->
 <!-- Hack 3: come up with a new event or sequence, reference: https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event-->
 
-<<<<<<< HEAD
-=======
-{% include nav_frontend.html %}
-
->>>>>>> cd96785fa8856da92d46bb4ecd98715d7a88a869
 <!---
 Sprite files are a collection of animations that are combined into a single file. The _data/mario.yml file has metadata description for the sprit file.  Each sprite is seperated by pixels horizontally and veritically.
 -->
