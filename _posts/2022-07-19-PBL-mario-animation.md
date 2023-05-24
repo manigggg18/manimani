@@ -9,6 +9,11 @@ categories: []
 tags: [javascript]
 ---
 
+<<<<<<< HEAD
+=======
+{% include nav_frontend.html %}
+
+>>>>>>> cd96785fa8856da92d46bb4ecd98715d7a88a869
 {% assign sprite_file = site.baseurl | append: page.image %}  <!--- Liquid concatentation --->
 {% assign hash = site.data.mario_metadata %}  <!--- Liquid list variable created from file containing mario metatdata for sprite --->
 {% assign pixels = 256 %} <!--- Liquid integer assignment --->
