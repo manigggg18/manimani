@@ -689,7 +689,7 @@ Sorted:
     <span class="n">left_half</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[:</span><span class="n">mid</span><span class="p">]</span>
     <span class="n">right_half</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[</span><span class="n">mid</span><span class="p">:]</span>
     
-    <span class="c1"># Recursively sort the left and right halves</span>
+    <span class="c1"># sort the left and right halves</span>
     <span class="n">left_half</span> <span class="o">=</span> <span class="n">mergeSort</span><span class="p">(</span><span class="n">left_half</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
     <span class="n">right_half</span> <span class="o">=</span> <span class="n">mergeSort</span><span class="p">(</span><span class="n">right_half</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
     
@@ -707,14 +707,13 @@ Sorted:
             <span class="n">merged</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">right</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
             <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
     
-    <span class="c1"># Add the remaining elements from the left and right halves</span>
+    <span class="c1"># add remaining elements from left and right halves</span>
     <span class="n">merged</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">:])</span>
     <span class="n">merged</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">right</span><span class="p">[</span><span class="n">j</span><span class="p">:])</span>
     
     <span class="k">return</span> <span class="n">merged</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-    <span class="c1"># List/dictionary sample</span>
     <span class="n">list_of_people</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Risa"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"New York"</span><span class="p">},</span>
         <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">63</span><span class="p">,</span> <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"Eugene"</span><span class="p">},</span>
@@ -722,16 +721,16 @@ Sorted:
         <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Ryan"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span> <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"Los Angeles"</span><span class="p">}</span>
     <span class="p">]</span>
     
-    <span class="c1"># Assuming uniform keys, pick the first row as the source of keys</span>
+    <span class="c1"># pick the first row as the source of keys</span>
     <span class="n">key_row</span> <span class="o">=</span> <span class="n">list_of_people</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-    <span class="c1"># Print the list as defined</span>
+    <span class="c1"># print list</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Original"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">)</span>
     
-    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">key_row</span><span class="p">:</span>  <span class="c1"># Find each key in the row</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">key_row</span><span class="p">:</span>  <span class="c1"># find each key in the row</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-        <span class="n">sorted_list</span> <span class="o">=</span> <span class="n">mergeSort</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>  <span class="c1"># Sort the list of people</span>
+        <span class="n">sorted_list</span> <span class="o">=</span> <span class="n">mergeSort</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>  <span class="c1"># sort list</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">sorted_list</span><span class="p">)</span>
 </pre></div>
 
