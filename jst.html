@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>JavaScript Tutorial | A Blog of Some Kind</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="JavaScript Tutorial" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quick launch into Variables, Functions, Arrays, Classes, HTML." />
+<meta property="og:description" content="Quick launch into Variables, Functions, Arrays, Classes, HTML." />
+<link rel="canonical" href="https://manigggg18.github.io/manimani/jst" />
+<meta property="og:url" content="https://manigggg18.github.io/manimani/jst" />
+<meta property="og:site_name" content="A Blog of Some Kind" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-11T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="JavaScript Tutorial" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-11T00:00:00-05:00","datePublished":"2023-05-11T00:00:00-05:00","description":"Quick launch into Variables, Functions, Arrays, Classes, HTML.","headline":"JavaScript Tutorial","mainEntityOfPage":{"@type":"WebPage","@id":"https://manigggg18.github.io/manimani/jst"},"url":"https://manigggg18.github.io/manimani/jst"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/manimani/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://manigggg18.github.io/manimani/feed.xml" title="A Blog of Some Kind" /><link rel="shortcut icon" type="image/x-icon" href="/manimani/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/manimani/">A Blog of Some Kind</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/manimani/about/">About Me</a><a class="page-link" href="/manimani/game">Game</a><a class="page-link" href="/manimani/notes%20&%20vocab/">Notes &amp; Vocab</a><a class="page-link" href="/manimani/javascript/">Misc</a><a class="page-link" href="/manimani/lessons/">Lessons</a><a class="page-link" href="/manimani/categories/">Tags</a><a class="page-link" href="/manimani/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">JavaScript Tutorial</h1><p class="page-description">Quick launch into Variables, Functions, Arrays, Classes, HTML.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-05-11T00:00:00-05:00" itemprop="datePublished">
+        May 11, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/manimani/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-05-11-PBL-javascript_tutorial.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">game</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Pick.&quot;</span><span class="p">)</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://steam2.p.rapidapi.com/search/&quot;</span> <span class="o">+</span> <span class="n">game</span> <span class="o">+</span> <span class="s2">&quot;/page/1&quot;</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;24662782b6msh7d95c7667aea623p12c71ajsnc0aa91d82aa9&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;steam2.p.rapidapi.com&quot;</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">first_item</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">00</span><span class="p">]</span>
+<span class="n">second_item</span><span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">title</span> <span class="o">=</span> <span class="n">first_item</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+<span class="n">url</span> <span class="o">=</span> <span class="n">first_item</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span>
+<span class="n">img_url</span> <span class="o">=</span> <span class="n">first_item</span><span class="p">[</span><span class="s1">&#39;imgUrl&#39;</span><span class="p">]</span>
+<span class="n">released</span> <span class="o">=</span> <span class="n">first_item</span><span class="p">[</span><span class="s1">&#39;released&#39;</span><span class="p">]</span>
+<span class="n">review_summary</span> <span class="o">=</span> <span class="n">first_item</span><span class="p">[</span><span class="s1">&#39;reviewSummary&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;br&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="n">price</span> <span class="o">=</span> <span class="n">first_item</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span>
+
+<span class="n">title2</span> <span class="o">=</span> <span class="n">second_item</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+<span class="n">url2</span> <span class="o">=</span> <span class="n">second_item</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span>
+<span class="n">img_url2</span> <span class="o">=</span> <span class="n">second_item</span><span class="p">[</span><span class="s1">&#39;imgUrl&#39;</span><span class="p">]</span>
+<span class="n">released2</span> <span class="o">=</span> <span class="n">second_item</span><span class="p">[</span><span class="s1">&#39;released&#39;</span><span class="p">]</span>
+<span class="n">review_summary2</span> <span class="o">=</span> <span class="n">second_item</span><span class="p">[</span><span class="s1">&#39;reviewSummary&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;br&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="n">price2</span> <span class="o">=</span> <span class="n">second_item</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Title:&quot;</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;URL:&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Image URL:&quot;</span><span class="p">,</span> <span class="n">img_url</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Released:&quot;</span><span class="p">,</span> <span class="n">released</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Review Summary:&quot;</span><span class="p">,</span> <span class="n">review_summary</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Price:&quot;</span><span class="p">,</span> <span class="n">price</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Title:&quot;</span><span class="p">,</span> <span class="n">title2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;URL:&quot;</span><span class="p">,</span> <span class="n">url2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Image URL:&quot;</span><span class="p">,</span> <span class="n">img_url2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Released:&quot;</span><span class="p">,</span> <span class="n">released2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Review Summary:&quot;</span><span class="p">,</span> <span class="n">review_summary2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Price:&quot;</span><span class="p">,</span> <span class="n">price2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Title: Batman™: Arkham Knight
+URL: https://store.steampowered.com/app/208650/Batman_Arkham_Knight/?snr=1_7_7_151_150_1
+Image URL: https://cdn.cloudflare.steamstatic.com/steam/apps/208650/capsule_sm_120.jpg?t=1681938976
+Released: 23 Jun, 2015
+Review Summary: Very Positive 89% of the 64,476 user reviews for this game are positive.
+Price:                         19,99€                    
+Title: Batman™: Arkham Origins
+URL: https://store.steampowered.com/app/209000/Batman_Arkham_Origins/?snr=1_7_7_151_150_1
+Image URL: https://cdn.cloudflare.steamstatic.com/steam/apps/209000/capsule_sm_120.jpg?t=1681234740
+Released: 24 Oct, 2013
+Review Summary: Very Positive 88% of the 28,529 user reviews for this game are positive.
+Price:                         19,99€                    
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;getGameInfo()&quot;</span><span class="p">&gt;</span>Get Game Info<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Game 1:<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;title1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;url1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;img-url1&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Game 1 Image&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;released1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;review-summary1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;price1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Game 2:<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;title2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;url2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;img-url2&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Game 2 Image&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;released2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;review-summary2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;price2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">function</span> <span class="nx">getGameInfo</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kr">const</span> <span class="nx">game</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Pick.&quot;</span><span class="p">);</span>
+
+      <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&quot;https://steam2.p.rapidapi.com/search/&quot;</span> <span class="o">+</span> <span class="nx">game</span> <span class="o">+</span> <span class="s2">&quot;/page/1&quot;</span><span class="p">;</span>
+
+      <span class="kr">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="o">:</span> <span class="s2">&quot;24662782b6msh7d95c7667aea623p12c71ajsnc0aa91d82aa9&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="o">:</span> <span class="s2">&quot;steam2.p.rapidapi.com&quot;</span>
+      <span class="p">};</span>
+
+      <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="p">{</span> <span class="nx">headers</span> <span class="p">})</span>
+        <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+        <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+          <span class="kr">const</span> <span class="nx">first_item</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+          <span class="kr">const</span> <span class="nx">second_item</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="mf">1</span><span class="p">];</span>
+
+          <span class="kr">const</span> <span class="nx">title</span> <span class="o">=</span> <span class="nx">first_item</span><span class="p">.</span><span class="nx">title</span><span class="p">;</span>
+          <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">first_item</span><span class="p">.</span><span class="nx">url</span><span class="p">;</span>
+          <span class="kr">const</span> <span class="nx">img_url</span> <span class="o">=</span> <span class="nx">first_item</span><span class="p">.</span><span class="nx">imgUrl</span><span class="p">;</span>
+          <span class="kr">const</span> <span class="nx">released</span> <span class="o">=</span> <span class="nx">first_item</span><span class="p">.</span><span class="nx">released</span><span class="p">;</span>
+          <span class="kr">const</span> <span class="nx">review_summary</span> <span class="o">=</span> <span class="nx">first_item</span><span class="p">.</span><span class="nx">reviewSummary</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;&lt;br&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">);</span>
+          <span class="kr">const</span> <span class="nx">price</span> <span class="o">=</span> <span class="nx">first_item</span><span class="p">.</span><span class="nx">price</span><span class="p">;</span>
+
+          <span class="kr">const</span> <span class="nx">title2</span> <span class="o">=</span> <span class="nx">second_item</span><span class="p">.</span><span class="nx">title</span><span class="p">;</span>
+          <span class="kr">const</span> <span class="nx">url2</span> <span class="o">=</span> <span class="nx">second_item</span><span class="p">.</span><span class="nx">url</span><span class="p">;</span>
+          <span class="kr">const</span> <span class="nx">img_url2</span> <span class="o">=</span> <span class="nx">second_item</span><span class="p">.</span><span class="nx">imgUrl</span><span class="p">;</span>
+          <span class="kr">const</span> <span class="nx">released2</span> <span class="o">=</span> <span class="nx">second_item</span><span class="p">.</span><span class="nx">released</span><span class="p">;</span>
+          <span class="kr">const</span> <span class="nx">review_summary2</span> <span class="o">=</span> <span class="nx">second_item</span><span class="p">.</span><span class="nx">reviewSummary</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;&lt;br&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">);</span>
+          <span class="kr">const</span> <span class="nx">price2</span> <span class="o">=</span> <span class="nx">second_item</span><span class="p">.</span><span class="nx">price</span><span class="p">;</span>
+
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;title1&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Title: &quot;</span> <span class="o">+</span> <span class="nx">title</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;url1&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;URL: &quot;</span> <span class="o">+</span> <span class="nx">url</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;img-url1&quot;</span><span class="p">).</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">img_url</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;released1&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Released: &quot;</span> <span class="o">+</span> <span class="nx">released</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;review-summary1&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Review Summary: &quot;</span> <span class="o">+</span> <span class="nx">review_summary</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;price1&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Price: &quot;</span> <span class="o">+</span> <span class="nx">price</span><span class="p">;</span>
+
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;title2&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Title: &quot;</span> <span class="o">+</span> <span class="nx">title2</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;url2&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;URL: &quot;</span> <span class="o">+</span> <span class="nx">url2</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;img-url2&quot;</span><span class="p">).</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">img_url2</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;released2&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Released: &quot;</span> <span class="o">+</span> <span class="nx">released2</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;review-summary2&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Review Summary: &quot;</span> <span class="o">+</span> <span class="nx">review_summary2</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;price2&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Price: &quot;</span> <span class="o">+</span> <span class="nx">price2</span><span class="p">;</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">));</span>
+    <span class="p">}</span>
+  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+&lt;!DOCTYPE html&gt;
+<html>
+<body>
+  <button onclick="getGameInfo()">Get Game Info</button>
+  <br /><br />
+  <h2>Game 1:</h2>
+  <p id="title1"></p>
+  <p id="url1"></p>
+  <img id="img-url1" src="" alt="Game 1 Image" />
+  <p id="released1"></p>
+  <p id="review-summary1"></p>
+  <p id="price1"></p>
+  <br /><br />
+  <h2>Game 2:</h2>
+  <p id="title2"></p>
+  <p id="url2"></p>
+  <img id="img-url2" src="" alt="Game 2 Image" />
+  <p id="released2"></p>
+  <p id="review-summary2"></p>
+  <p id="price2"></p>
+
+  <script>
+    function getGameInfo() {
+      const game = prompt("Pick.");
+
+      const url = "https://steam2.p.rapidapi.com/search/batman/page/1";
+
+      const headers = {
+        "X-RapidAPI-Key": "24662782b6msh7d95c7667aea623p12c71ajsnc0aa91d82aa9",
+        "X-RapidAPI-Host": "steam2.p.rapidapi.com"
+      };
+
+      fetch(url, { headers })
+        .then(response => response.json())
+        .then(data => {
+          const first_item = data[0];
+          const second_item = data[1];
+
+          const title = first_item.title;
+          const url = first_item.url;
+          const img_url = first_item.imgUrl;
+          const released = first_item.released;
+          const review_summary = first_item.reviewSummary.replace("<br>", " ");
+          const price = first_item.price;
+
+          const title2 = second_item.title;
+          const url2 = second_item.url;
+          const img_url2 = second_item.imgUrl;
+          const released2 = second_item.released;
+          const review_summary2 = second_item.reviewSummary.replace("<br>", " ");
+          const price2 = second_item.price;
+
+          document.getElementById("title1").textContent = "Title: " + title;
+          document.getElementById("url1").textContent = "URL: " + url;
+          document.getElementById("img-url1").src = img_url;
+          document.getElementById("released1").textContent = "Released: " + released;
+          document.getElementById("review-summary1").textContent = "Review Summary: " + review_summary;
+          document.getElementById("price1").textContent = "Price: " + price;
+
+          document.getElementById("title2").textContent = "Title: " + title2;
+          document.getElementById("url2").textContent = "URL: " + url2;
+          document.getElementById("img-url2").src = img_url2;
+          document.getElementById("released2").textContent = "Released: " + released2;
+          document.getElementById("review-summary2").textContent = "Review Summary: " + review_summary2;
+          document.getElementById("price2").textContent = "Price: " + price2;
+        })
+        .catch(error => console.log(error));
+    }
+  </script>
+</body>
+</html>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h2><blockquote><p>One key to these hacks is to build confidence with me going into final grade, I would like to see each student adapt this frontend work in their final project.  Second key is the finished work can serve as review for the course, notes for the future in relationship to frontend.</p>
+<ul>
+<li>Adapt this tutorial to your own work</li>
+<li>Consider what you need to work on to be stronger developer</li>
+<li>Show something creative or unique, no cloning</li>
+<li>Be ready to talk to Teacher for 5 to 10 minutes. Individually!!! </li>
+<li>Show in Jupyter Notebook during discussion, show Theme and ChatGPT</li>
+<li>Have a runtime final in GithHub Pages (or Fastpage)</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/manimani/jst" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/manimani/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://manigggg18.github.io/manimani/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/manimani/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Merely a tool for mastering Computer Science.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/manimani/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/Mani26393347 “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/manimani/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UCDCoC16kj3pPgf53Mr8_Jcw “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/manimani/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
