@@ -1,0 +1,113 @@
+---
+layout: page
+permalink: /jstut
+title: JS Tutorial
+---
+
+<!DOCTYPE html>
+<html>
+<style>
+.page-content {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  text-align: center;
+}
+button {
+  margin-bottom: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #858585;
+}
+
+.button-rotate {
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}  
+input {
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+</style>
+<body>
+  <input type="text" id="gameNameInput" placeholder="Enter game name">
+  <br>
+  <button onclick="getGameInfo()">Get Game Info</button>
+  <br>
+  <div id="gameInfoContainer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+<script>
+$(document).ready(function() {
+  $("button").click(function() {
+    $(this).addClass("button-rotate");
+    $(this).text(""); // Clear the text inside the button
+    $(this).css("width", "0.5%"); // Decrease the width of the button by 50%
+  });
+});
+function getGameInfo() {
+  const gameName = document.getElementById("gameNameInput").value.trim();
+  const gameCount = 10; // Number of games to retrieve
+
+  const url = "https://steam2.p.rapidapi.com/search/" + gameName + "/page/1";
+  const headers = {
+    "X-RapidAPI-Key": "24662782b6msh7d95c7667aea623p12c71ajsnc0aa91d82aa9",
+    "X-RapidAPI-Host": "steam2.p.rapidapi.com"
+  };
+
+  fetch(url, { headers })
+    .then(response => response.json())
+    .then(data => {
+      const games = data.slice(0, gameCount);
+
+      const gameInfoContainer = document.getElementById("gameInfoContainer");
+      gameInfoContainer.innerHTML = ""; // Clear previous game information
+
+      games.forEach((game, index) => {
+        const title = game.title;
+        const url = game.url;
+        const img_url = game.imgUrl;
+        const released = game.released;
+        const review_summary = game.reviewSummary.replace("<br>", " ");
+        const price = game.price;
+
+        const gameIndex = index + 1;
+
+        const gameDiv = document.createElement("div");
+        gameDiv.innerHTML = `
+          <h2>Match ${gameIndex}: ${title}</h2>
+          <p>URL: ${url}</p>
+          <img src="${img_url}">
+          <p>Released: ${released}</p>
+          <p>Review Summary: ${review_summary}</p>
+          <p>Price: ${price}</p>
+          <br><br>
+        `;
+
+        gameInfoContainer.appendChild(gameDiv);
+      });
+    })
+    .catch(error => console.log(error));
+}
+</script>
+</html>
