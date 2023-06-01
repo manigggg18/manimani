@@ -1,0 +1,76 @@
+---
+layout: page
+permalink: /jstut
+---
+
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="getGameInfo()">Get Game Info</button>
+  <br><br>
+  <h2>Game 1:</h2>
+  <p id="title1"></p>
+  <p id="url1"></p>
+  <img id="img-url1" src="">
+  <p id="released1"></p>
+  <p id="review-summary1"></p>
+  <p id="price1"></p>
+  <br><br>
+  <h2>Game 2:</h2>
+  <p id="title2"></p>
+  <p id="url2"></p>
+  <img id="img-url2" src="">
+  <p id="released2"></p>
+  <p id="review-summary2"></p>
+  <p id="price2"></p>
+
+  <script>
+    function getGameInfo() {
+      const game = prompt("Pick.");
+
+      const url = "https://steam2.p.rapidapi.com/search/" + game + "/page/1";
+
+      const headers = {
+        "X-RapidAPI-Key": "24662782b6msh7d95c7667aea623p12c71ajsnc0aa91d82aa9",
+        "X-RapidAPI-Host": "steam2.p.rapidapi.com"
+      };
+
+      fetch(url, { headers })
+        .then(response => response.json())
+        .then(data => {
+          const first_item = data[0];
+          const second_item = data[1];
+
+          const title = first_item.title;
+          const url = first_item.url;
+          const img_url = first_item.imgUrl;
+          const released = first_item.released;
+          const review_summary = first_item.reviewSummary.replace("<br>", " ");
+          const price = first_item.price;
+
+          const title2 = second_item.title;
+          const url2 = second_item.url;
+          const img_url2 = second_item.imgUrl;
+          const released2 = second_item.released;
+          const review_summary2 = second_item.reviewSummary.replace("<br>", " ");
+          const price2 = second_item.price;
+
+          document.getElementById("title1").textContent = "Title: " + title;
+          document.getElementById("url1").textContent = "URL: " + url;
+          document.getElementById("img-url1").src = img_url;
+          document.getElementById("released1").textContent = "Released: " + released;
+          document.getElementById("review-summary1").textContent = "Review Summary: " + review_summary;
+          document.getElementById("price1").textContent = "Price: " + price;
+
+          document.getElementById("title2").textContent = "Title: " + title2;
+          document.getElementById("url2").textContent = "URL: " + url2;
+          document.getElementById("img-url2").src = img_url2;
+          document.getElementById("released2").textContent = "Released: " + released2;
+          document.getElementById("review-summary2").textContent = "Review Summary: " + review_summary2;
+          document.getElementById("price2").textContent = "Price: " + price2;
+        })
+        .catch(error => console.log(error));
+    }
+  </script>
+</body>
+</html>
