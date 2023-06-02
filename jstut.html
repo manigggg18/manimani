@@ -121,7 +121,7 @@ button:hover {
 }
 
 .button-rotate {
-  animation: rotate 1s infinite linear;
+  animation: rotate 2s linear;
 }
 
 @keyframes rotate {
@@ -133,8 +133,63 @@ button:hover {
   }
 }  
 input {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   border-radius: 10px;
+}
+.fc {
+  perspective: 1000px;
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 170px;
+  border-radius: 10px;
+  margin-bottom: 120px;
+}
+
+.fc-inner {
+  width: 200px;
+  height: 170px;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  margin-bottom: 140px;
+}
+
+.fc:hover .fc-inner {
+  transform: rotateY(180deg);
+}
+
+.fc-front,
+.fc-back {
+  width: 200px;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  margin-bottom: 120px;
+}
+
+.fc-front {
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.fc-back {
+  height: 300px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #760000;
+  border-radius: 10px;
+}
+img {
+  width: 200px;
+  height: 80px;
+  margin-bottom: 120px;
 }
 </style>
 <body>
@@ -148,11 +203,19 @@ input {
 <script>
 $(document).ready(function() {
   $("button").click(function() {
-    $(this).addClass("button-rotate");
-    $(this).text(""); // Clear the text inside the button
-    $(this).css("width", "0.5%"); // Decrease the width of the button by 50%
+    var button = $(this);
+    button.addClass("button-rotate");
+    button.text("");
+    button.css("width", "0.5%");
+
+    setTimeout(function() {
+      button.removeClass("button-rotate");
+      button.text("Get Game Info");
+      button.css("width", "");
+    }, 2000); 
   });
 });
+
 function getGameInfo() {
   const gameName = document.getElementById("gameNameInput").value.trim();
   const gameCount = 10; // Number of games to retrieve
@@ -178,22 +241,39 @@ function getGameInfo() {
         const released = game.released;
         const review_summary = game.reviewSummary.replace("<br>", " ");
         const price = game.price;
-
+      
         const gameIndex = index + 1;
-
-        const gameDiv = document.createElement("div");
-        gameDiv.innerHTML = `
-          <h2>Match ${gameIndex}: ${title}</h2>
-          <p>URL: ${url}</p>
-          <img src="${img_url}">
-          <p>Released: ${released}</p>
-          <p>Review Summary: ${review_summary}</p>
-          <p>Price: ${price}</p>
-          <br><br>
+      
+        const flipCard = document.createElement("div");
+        flipCard.className = "fc";
+      
+        const flipCardInner = document.createElement("div");
+        flipCardInner.className = "fc-inner";
+            
+        const flipCardFront = document.createElement("div");
+        flipCardFront.className = "fc-front";
+        flipCardFront.innerHTML = `<img src="${img_url}" style="width:100%;height:100%;" alt="${title}">`;
+      
+        const flipCardBack = document.createElement("div");
+        flipCardBack.className = "fc-back";
+        flipCardBack.innerHTML = `
+          <p style="font-size:15px">Match ${gameIndex}: ${title}</p>
+          <a href="${url}">Link</a>
+          <p style="font-size:15px">Released: ${released}</p>
+          <p style="font-size:15px">Review Summary: ${review_summary}</p>
+          <p style="font-size:15px">Price: ${price}</p>
         `;
+      
+        flipCardInner.appendChild(flipCardFront);
+        flipCardInner.appendChild(flipCardBack);
+        flipCard.appendChild(flipCardInner);
+            
+        gameInfoContainer.appendChild(flipCard);
 
-        gameInfoContainer.appendChild(gameDiv);
-      });
+        if (index === 2 || index === 6) {
+          gameInfoContainer.appendChild(document.createElement("br"));
+        }      
+      });      
     })
     .catch(error => console.log(error));
 }
