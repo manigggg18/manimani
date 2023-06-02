@@ -29,7 +29,7 @@ button {
 }
 
 button:hover {
-  background-color: #858585;
+  background-color: #b12a2a;
 }
 
 .button-rotate {
@@ -55,7 +55,7 @@ input {
   width: 200px;
   height: 170px;
   border-radius: 10px;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 
 .fc-inner {
@@ -78,7 +78,7 @@ input {
   position: absolute;
   backface-visibility: hidden;
   border-radius: 10px;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 
 .fc-front {
@@ -101,7 +101,7 @@ input {
 img {
   width: 200px;
   height: 80px;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 </style>
 <body>
@@ -130,7 +130,7 @@ $(document).ready(function() {
 
 function getGameInfo() {
   const gameName = document.getElementById("gameNameInput").value.trim();
-  const gameCount = 10; // Number of games to retrieve
+  const gameCount = 10; 
 
   const url = "https://steam2.p.rapidapi.com/search/" + gameName + "/page/1";
   const headers = {
@@ -144,7 +144,7 @@ function getGameInfo() {
       const games = data.slice(0, gameCount);
 
       const gameInfoContainer = document.getElementById("gameInfoContainer");
-      gameInfoContainer.innerHTML = ""; // Clear previous game information
+      gameInfoContainer.innerHTML = "";
 
       games.forEach((game, index) => {
         const title = game.title;
@@ -164,7 +164,7 @@ function getGameInfo() {
             
         const flipCardFront = document.createElement("div");
         flipCardFront.className = "fc-front";
-        flipCardFront.innerHTML = `<img src="${img_url}" style="width:100%;height:100%;" alt="${title}">`;
+        flipCardFront.innerHTML = `<img src="${img_url}" alt="${title}">`;
       
         const flipCardBack = document.createElement("div");
         flipCardBack.className = "fc-back";
