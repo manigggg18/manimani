@@ -184,19 +184,25 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Title: Fallout 76
-URL: https://store.steampowered.com/app/1151340/Fallout_76/?snr=1_7_7_151_150_1
-Image URL: https://cdn.cloudflare.steamstatic.com/steam/apps/1151340/capsule_sm_120.jpg?t=1677608851
-Released: 14 Apr, 2020
-Review Summary: Mostly Positive 75% of the 43,900 user reviews for this game are positive.
-Price:                         39,99€                    
-Title: Fallout 4
-URL: https://store.steampowered.com/app/377160/Fallout_4/?snr=1_7_7_151_150_1
-Image URL: https://cdn.cloudflare.steamstatic.com/steam/apps/377160/capsule_sm_120.jpg?t=1650909928
-Released: 9 Nov, 2015
-Review Summary: Very Positive 83% of the 197,731 user reviews for this game are positive.
-Price:                         19,99€                    
+<pre>Pick.Mario
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+Input <span class="ansi-green-fg">In [3]</span>, in <span class="ansi-cyan-fg">&lt;cell line: 22&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     20</span> img_url <span style="color: rgb(98,98,98)">=</span> first_item[<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">imgUrl</span><span style="color: rgb(175,0,0)">&#39;</span>]
+<span class="ansi-green-intense-fg ansi-bold">     21</span> released <span style="color: rgb(98,98,98)">=</span> first_item[<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">released</span><span style="color: rgb(175,0,0)">&#39;</span>]
+<span class="ansi-green-fg">---&gt; 22</span> review_summary <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">first_item</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#39;</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">reviewSummary</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#39;</span><span class="ansi-yellow-bg">]</span><span style="color: rgb(98,98,98)">.</span>replace(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">&lt;br&gt;</span><span style="color: rgb(175,0,0)">&#34;</span>, <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)"> </span><span style="color: rgb(175,0,0)">&#34;</span>)
+<span class="ansi-green-intense-fg ansi-bold">     23</span> price <span style="color: rgb(98,98,98)">=</span> first_item[<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">price</span><span style="color: rgb(175,0,0)">&#39;</span>]
+<span class="ansi-green-intense-fg ansi-bold">     25</span> title2 <span style="color: rgb(98,98,98)">=</span> second_item[<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">title</span><span style="color: rgb(175,0,0)">&#39;</span>]
+
+<span class="ansi-red-fg">KeyError</span>: &#39;reviewSummary&#39;</pre>
 </div>
 </div>
 
